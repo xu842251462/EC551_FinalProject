@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Aug 25 16:22:40 2022
+# Process ID: 111868
+# Current directory: C:/Users/bokiss/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent139692
+# Log file: C:/Users/bokiss/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/bokiss/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/WorkBORI/Basys-3/hw/scripts/digilent_vivado_checkout.tcl}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+archive_project D:/WorkBORI/Basys-3/hw/Basys-3-XADC-hw.xpr.zip -temp_dir C:/Users/bokiss/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-111868-sim-ro -force -include_local_ip_cache -include_config_settings
