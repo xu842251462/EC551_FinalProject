@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov  1 14:42:52 2018
+# Process ID: 17136
+# Current directory: D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/proj/Nexys-A7-100T-XADC.runs/synth_1
+# Command line: vivado.exe -log XADCdemo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source XADCdemo.tcl
+# Log file: D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/proj/Nexys-A7-100T-XADC.runs/synth_1/XADCdemo.vds
+# Journal file: D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/proj/Nexys-A7-100T-XADC.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source XADCdemo.tcl -notrace
