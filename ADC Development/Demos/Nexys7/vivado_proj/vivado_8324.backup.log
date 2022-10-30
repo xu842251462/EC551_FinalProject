@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct 30 11:36:54 2022
+# Process ID: 8324
+# Current directory: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2744 X:\EC551\FinalProject\Working Copy\EC551_FinalProject\ADC Development\Demos\Nexys7\vivado_proj\Nexys-A7-100T-XADC.xpr
+# Log file: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/vivado.log
+# Journal file: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj'
+INFO: [Project 1-313] Project file moved from 'D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/proj/temp/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/repo', nor could it be found using path 'D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/repo'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.ip_user_files', nor could it be found using path 'D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/proj/temp/PrjAr/_X_/Nexys-A7-100T-XADC.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'x:/EC551/FinalProject/Working Copy/EC551_FinalProject/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'xadc_wiz_0' is locked:
+* IP definition 'XADC Wizard (3.3)' for IP 'xadc_wiz_0' (customized with software release 2018.2) has a different revision in the IP Catalog.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 884.004 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run xadc_wiz_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-577] IP run xadc_wiz_0_synth_1 is available but is out of date. Since the IP is locked, the synthesis checkpoint cannot be updated. The out-of-date checkpoint will be used and it may result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.xci
+
+WARNING: [Project 1-576] IP 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.xci' in run xadc_wiz_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+[Sun Oct 30 11:37:55 2022] Launched xadc_wiz_0_synth_1, synth_1...
+Run output will be captured here:
+xadc_wiz_0_synth_1: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.runs/xadc_wiz_0_synth_1/runme.log
+synth_1: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.runs/synth_1/runme.log
+[Sun Oct 30 11:37:55 2022] Launched impl_1...
+Run output will be captured here: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.runs/impl_1/runme.log
+get_board_parts
+alpha-data.com:adm-pcie-7v3:part0:1.0 alpha-data.com:adm-pcie-7v3:part0:1.1 alpha-data.com:adm-pcie3-ku3:part0:1.0 digilentinc.com:nexys-a7-100t:part0:1.0 em.avnet.com:zed:part0:0.9 em.avnet.com:zed:part0:1.0 em.avnet.com:zed:part0:1.1 em.avnet.com:zed:part0:1.2 em.avnet.com:zed:part0:1.3 em.avnet.com:zed:part0:1.4 xilinx.com:ac701:part0:1.0 xilinx.com:ac701:part0:1.1 xilinx.com:ac701:part0:1.2 xilinx.com:ac701:part0:1.3 xilinx.com:ac701:part0:1.4 xilinx.com:au200:part0:1.0 xilinx.com:au200:part0:1.1 xilinx.com:au200:part0:1.2 xilinx.com:au250:part0:1.0 xilinx.com:au250:part0:1.1 xilinx.com:au250:part0:1.2 xilinx.com:kc705:part0:0.9 xilinx.com:kc705:part0:1.0 xilinx.com:kc705:part0:1.1 xilinx.com:kc705:part0:1.2 xilinx.com:kc705:part0:1.3 xilinx.com:kc705:part0:1.4 xilinx.com:kc705:part0:1.5 xilinx.com:kc705:part0:1.6 xilinx.com:kcu105:part0:1.0 xilinx.com:kcu105:part0:1.1 xilinx.com:kcu105:part0:1.2 xilinx.com:kcu105:part0:1.3 xilinx.com:kcu105:part0:1.4 xilinx.com:kcu105:part0:1.5 xilinx.com:kcu105:part0:1.6 xilinx.com:kcu116:part0:1.0 xilinx.com:kcu116:part0:1.1 xilinx.com:kcu116:part0:1.2 xilinx.com:kcu116:part0:1.3 xilinx.com:kcu116:part0:1.4 xilinx.com:kcu1500:part0:1.0 xilinx.com:kcu1500:part0:1.1 xilinx.com:kcu1500:part0:1.2 xilinx.com:pico_m505:part0:1.0 xilinx.com:sp701:part0:1.0 xilinx.com:vc707:part0:1.0 xilinx.com:vc707:part0:1.1 xilinx.com:vc707:part0:1.2 xilinx.com:vc707:part0:1.3 xilinx.com:vc707:part0:1.4 xilinx.com:vc709:part0:1.0 xilinx.com:vc709:part0:1.1 xilinx.com:vc709:part0:1.2 xilinx.com:vc709:part0:1.3 xilinx.com:vc709:part0:1.4 xilinx.com:vc709:part0:1.5 xilinx.com:vc709:part0:1.6 xilinx.com:vc709:part0:1.7 xilinx.com:vc709:part0:1.8 xilinx.com:vcu108:part0:1.1 xilinx.com:vcu108:part0:1.2 xilinx.com:vcu108:part0:1.3 xilinx.com:vcu108:part0:1.4 xilinx.com:vcu108:part0:1.5 xilinx.com:vcu108:part0:1.6 xilinx.com:vcu110:part0:1.1 xilinx.com:vcu110:part0:1.2 xilinx.com:vcu110:part0:1.3 xilinx.com:vcu110:part0:1.4 xilinx.com:vcu118:part0:2.1 xilinx.com:vcu118:part0:2.2 xilinx.com:vcu118:part0:2.3 xilinx.com:vcu1525:part0:1.0 xilinx.com:vcu1525:part0:1.1 xilinx.com:vcu1525:part0:1.2 xilinx.com:vcu1525:part0:1.3 xilinx.com:zc702:part0:1.0 xilinx.com:zc702:part0:1.1 xilinx.com:zc702:part0:1.2 xilinx.com:zc702:part0:1.3 xilinx.com:zc702:part0:1.4 xilinx.com:zc706:part0:1.0 xilinx.com:zc706:part0:1.1 xilinx.com:zc706:part0:1.2 xilinx.com:zc706:part0:1.3 xilinx.com:zc706:part0:1.4 xilinx.com:zcu102:part0:3.1 xilinx.com:zcu102:part0:3.2 xilinx.com:zcu102:part0:3.3 xilinx.com:zcu104:part0:1.0 xilinx.com:zcu104:part0:1.1 xilinx.com:zcu106:part0:2.0 xilinx.com:zcu106:part0:2.1 xilinx.com:zcu106:part0:2.2 xilinx.com:zcu106:part0:2.3 xilinx.com:zcu106:part0:2.4 xilinx.com:zcu111:part0:1.1 xilinx.com:zcu111:part0:1.2 xilinx.com:zcu1275:part0:1.0 xilinx.com:zcu1285:part0:1.0
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF909A
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 30 11:48:36 2022...
