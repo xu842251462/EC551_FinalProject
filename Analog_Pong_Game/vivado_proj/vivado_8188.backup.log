@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 26 13:32:14 2022
+# Process ID: 8188
+# Current directory: X:/EC551/FinalProject/Nexys7/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12664 X:\EC551\FinalProject\Nexys7\vivado_proj\Nexys-A7-100T-XADC.xpr
+# Log file: X:/EC551/FinalProject/Nexys7/vivado_proj/vivado.log
+# Journal file: X:/EC551/FinalProject/Nexys7/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project X:/EC551/FinalProject/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'X:/repo'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'x:/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'xadc_wiz_0' is locked:
+* IP definition 'XADC Wizard (3.3)' for IP 'xadc_wiz_0' (customized with software release 2018.2) has a different revision in the IP Catalog.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 812.656 ; gain = 108.887
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 26 17:39:30 2022...

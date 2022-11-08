@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov  1 15:21:33 2018
+# Process ID: 16568
+# Current directory: C:/Users/arthur/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14620
+# Log file: C:/Users/arthur/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/arthur/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/arthur/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+0 Beta devices matching pattern found, 0 enabled.
+Setting up proc digilent_create_release_proc
+Setting up proc digilent_vivado_checkin_proc
+Setting up proc digilent_vivado_checkout_proc
+INFO: [Common 17-1463] Init.tcl in C:/Users/arthur/AppData/Roaming/Xilinx/Vivado/init.tcl is not used. Vivado_init.tcl is already sourced.
+start_gui
+open_project D:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/proj/Nexys-A7-50T-OOB.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 983.410 ; gain = 130.559
+Nexys-A7-50T-OOB
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/src/constraints/Nexys-A7-50T-Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 D:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/src/constraints/Nexys-A7-50T-Master.xdc
+launch_runs impl_1 -digilent_create_release
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-GPIO/proj/temp' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival..diINFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'imdigilent_create_release
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/proj/temp' for archiving projeINFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'xadc_wiz_0_synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-133] re-setting run 'xadc_wiz_0_impl_1'...
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'xadc_wiz_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+-A7/Nexys-A7-50T-Keyboard/release/Nexys-A7-50T-Keyboard-2018.2-1.zip
+ for IP 'ddr'...
+WARNING: [IP_Flow 19-519] IP 'ddr' detected a language mismatch between 'VHDL Simulation Wrapper' and 'Verilog Simulation' output products. Please check with the IP provider to see if this is expected.
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ddr'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ddr'...
+export_ip_user_files -of_objects [get_files D:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/src/ip/ddr/ddr.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files D:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/src/ip/ddr/ddr.xci] -directory D:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/proj/Nexys-A7-50T-OOB.ip_user_files/sim_scripts -ip_user_files_dir D:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/proj/Nexys-A7-50T-OOB.ip_user_files -ipstatic_source_dir D:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/proj/Nexys-A7-50T-OOB.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/proj/Nexys-A7-50T-OOB.cache/compile_simlib/modelsim} {questa=D:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/proj/Nexys-A7-50T-OOB.cache/compile_simlib/questa} {riviera=D:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/proj/Nexys-A7-50T-OOB.cache/compile_simlib/riviera} {activehdl=D:/Github/prerelease/Nexys-A7/Nexys-A7-50T-OOB/proj/Nexys-A7-50T-OOB.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+INFO: [IP_Flow 19-1686] Generating 'Sydigilent_create_release
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-OOB/proj/temp' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Github/prerelease/Nexys-A7/Nexys-A7-100T-OOB/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...

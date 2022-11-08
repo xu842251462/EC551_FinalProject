@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov  8 15:42:11 2022
+# Process ID: 23064
+# Current directory: X:/EC551/FinalProject/Nexys7/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16884 X:\EC551\FinalProject\Nexys7\vivado_proj\Nexys-A7-100T-XADC.xpr
+# Log file: X:/EC551/FinalProject/Nexys7/vivado_proj/vivado.log
+# Journal file: X:/EC551/FinalProject/Nexys7/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project X:/EC551/FinalProject/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr
+update_compile_order -fileset sources_1
+file mkdir X:/EC551/FinalProject/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new
+close [ open X:/EC551/FinalProject/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v w ]
+add_files X:/EC551/FinalProject/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v
+update_compile_order -fileset sources_1
+add_files -norecurse {{//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/dec_bcd.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/topmodule.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/debounce.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/num_hex.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/game.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/vga640x480.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/sram.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/clock_divider.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/bg_gen.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/paddle.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/increment_one.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/menu_screen.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/square.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/start_square.v} {//ad/eng/users/c/n/cnaught1/My Documents/GitHub/EC551_FinalProject/Pong Game/hdl/score_to_7seg.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run xadc_wiz_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {AN[7]} {AN[6]} {AN[5]} {AN[4]} {AN[3]} {AN[2]} {AN[1]} {AN[0]}]]
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {X:/EC551/FinalProject/Nexys7/vivado_proj/Nexys-A7-100T-XADC.runs/impl_1/top_new.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/EC551/FinalProject/Nexys7/vivado_proj/Nexys-A7-100T-XADC.runs/impl_1/top_new.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
