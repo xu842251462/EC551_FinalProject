@@ -35,20 +35,27 @@ module top_new(
    input wire vp_in,
    input wire vn_in,
    input wire [1:0] sw,
-    output reg VGA_HS, // horizontal sync
-    output reg VGA_VS, // vertical sync
-    output reg [3:0] VGA_R, // red channels
-    output reg [3:0] VGA_G, // green channels
-    output reg [3:0] VGA_B, // blue channels
-    output reg [6:0] seg, // 7-segment segments 
-    output reg [7:0] AN // 7-segment anodes
+   output wire [7:0] an,
+   output wire dp,
+   output wire [6:0] seg,
+   output reg [1:0] LED,
+    output wire vga_hs_top, // horizontal sync
+    output wire vga_vs_top, // vertical sync
+    output wire [3:0] vga_r_top, // red channels
+    output wire [3:0] vga_g_top, // green channels
+    output wire [3:0] vga_b_top, // blue channels
+    output wire [6:0] seg_top, // 7-segment segments 
+    output wire [7:0] an_top // 7-segment anodes
     );
-    
-    wire [3:0] vga_r_top, vga_g_top, vga_b_top; // pong game vga
-    wire vga_hs_top, vga_vs_top; // pong game horizontal and vertical sync
-    wire [7:0] an_top;
-    wire [6:0] seg_top;
-    
+        
+   reg [3:0] dig0;
+   reg [3:0] dig1;
+   reg [3:0] dig2;
+   reg [3:0] dig3;
+   reg [3:0] dig4;
+   reg [3:0] dig5;
+   reg [3:0] dig6;
+   reg [32:0] decimal; 
     
 XADCdemo top_ADC(
    .CLK100MHZ(CLK100MHZ),
@@ -80,18 +87,96 @@ XADCdemo top_ADC(
     );
  
  reg [1:0] BTN_LR;
+ reg dataL;
+ reg dataR;
+ 
+ always @ (posedge(CLK100MHZ))
+  begin 
+    dataL = vauxp3;
+    dataR = vauxp2;
+ end
+      reg [32:0] count; 
+     //binary to decimal conversion
+      always @ (posedge(CLK100MHZ))
+      begin
+      
+        if(count == 10000000)begin
+        
+        decimal = dataL;
+        //looks nicer if our max value is 1V instead of .999755
+        if(decimal >= 4093)
+        begin
+            dig0 = 0;
+            dig1 = 0;
+            dig2 = 0;
+            dig3 = 0;
+            dig4 = 0;
+            dig5 = 0;
+            dig6 = 1;
+            count = 0;
+        end
+        else 
+        begin
+            decimal = decimal * 250000;
+            decimal = decimal >> 10;
+            
+            
+            dig0 = decimal % 10;
+            decimal = decimal / 10;
+            
+            dig1 = decimal % 10;
+            decimal = decimal / 10;
+                   
+            dig2 = decimal % 10;
+            decimal = decimal / 10;
+            
+            dig3 = decimal % 10;
+            decimal = decimal / 10;
+            
+            dig4 = decimal % 10;
+            decimal = decimal / 10;
+                   
+            dig5 = decimal % 10;
+            decimal = decimal / 10; 
+            
+            dig6 = decimal % 10;
+            decimal = decimal / 10; 
+            
+            count = 0;
+        end
+       end
+       
+      count = count + 1;
+               
+      end
+      
+      DigitToSeg segment1(.in1(dig0),
+                         .in2(dig1),
+                         .in3(dig2),
+                         .in4(dig3),
+                         .in5(dig4),
+                         .in6(dig5),
+                         .in7(dig6),
+                         .in8(),
+                         .mclk(CLK100MHZ),
+                         .an(an),
+                         .dp(dp),
+                         .seg(seg)); 
  
  always@(*)
  begin
-     if(vauxp2-vauxn2>1000 & vauxp3-vauxn3>1000) 
+     if(dataL>10000 & dataR>10000) 
      begin
         BTN_LR = 2'b00;
+        LED = 2'b11;
         end
-     else if(vauxp2-vauxn2>1000) begin
+     else if(dataL>1000) begin
         BTN_LR = 2'b01;
+        LED = 2'b01;
         end
-      else if(vauxp3-vauxn3>1000) begin
+      else if(dataR>1000) begin
         BTN_LR = 2'b10;
+        LED = 2'b10;
         end
  end
  

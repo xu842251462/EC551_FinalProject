@@ -76,30 +76,30 @@ module xadc_wiz_0
           vp_in,               // Dedicated Analog Input Pair
           vn_in);
 
-          input [6:0] daddr_in;
-          input dclk_in;
-          input den_in;
-          input [15:0] di_in;
-          input dwe_in;
-          input reset_in;
-          input vauxp2;
-          input vauxn2;
-          input vauxp3;
-          input vauxn3;
-          input vauxp10;
-          input vauxn10;
-          input vauxp11;
-          input vauxn11;
-          input vp_in;
-          input vn_in;
+          input wire [6:0] daddr_in;
+          input wire dclk_in;
+          input wire den_in;
+          input wire [15:0] di_in;
+          input wire dwe_in;
+          input wire reset_in;
+          input wire vauxp2;
+          input wire vauxn2;
+          input wire vauxp3;
+          input wire vauxn3;
+          input wire vauxp10;
+          input wire vauxn10;
+          input wire vauxp11;
+          input wire vauxn11;
+          input wire vp_in;
+          input wire vn_in;
 
-          output busy_out;
-          output [4:0] channel_out;
-          output [15:0] do_out;
-          output drdy_out;
-          output eoc_out;
-          output eos_out;
-          output alarm_out;
+          output wire busy_out;
+          output wire [4:0] channel_out;
+          output wire [15:0] do_out;
+          output wire drdy_out;
+          output wire eoc_out;
+          output wire eos_out;
+          output wire alarm_out;
 
         wire FLOAT_VCCAUX;
         wire FLOAT_VCCINT;

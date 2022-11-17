@@ -19,9 +19,9 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module decoder_3_8 ( 
-    input [2:0] I,
-    output [7:0] an,
-    output dp	 
+    input wire [2:0] I,
+    output wire [7:0] an,
+    output wire dp	 
 );
 
 assign an[0] = ~(~I[2] & ~I[1] & ~I[0]);

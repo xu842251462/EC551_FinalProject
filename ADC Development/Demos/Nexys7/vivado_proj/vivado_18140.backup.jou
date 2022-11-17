@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 15 15:46:36 2022
+# Process ID: 18140
+# Current directory: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19256 X:\EC551\FinalProject\Working Copy\EC551_FinalProject\ADC Development\Demos\Nexys7\vivado_proj\Nexys-A7-100T-XADC.xpr
+# Log file: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/vivado.log
+# Journal file: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr}
+update_compile_order -fileset sources_1

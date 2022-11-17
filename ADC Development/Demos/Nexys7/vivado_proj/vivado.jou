@@ -2,24 +2,14 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Oct 30 11:48:54 2022
-# Process ID: 8300
+# Start of session at: Tue Nov 15 16:21:03 2022
+# Process ID: 16864
 # Current directory: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16204 X:\EC551\FinalProject\Working Copy\EC551_FinalProject\ADC Development\Demos\Nexys7\vivado_proj\Nexys-A7-100T-XADC.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13716 X:\EC551\FinalProject\Working Copy\EC551_FinalProject\ADC Development\Demos\Nexys7\vivado_proj\Nexys-A7-100T-XADC.xpr
 # Log file: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/vivado.log
 # Journal file: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr}
 update_compile_order -fileset sources_1
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.runs/impl_1/XADCdemo.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+synth_design -rtl -name rtl_1

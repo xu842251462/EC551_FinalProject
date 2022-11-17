@@ -1,0 +1,17 @@
+Design Route Status
+                                               :      # nets :
+   ------------------------------------------- : ----------- :
+   # of logical nets.......................... :        3912 :
+       # of nets not needing routing.......... :        1788 :
+           # of internally routed nets........ :        1788 :
+       # of routable nets..................... :        2124 :
+           # of fully routed nets............. :        2123 :
+       # of nets with routing errors.......... :           1 :
+           # of nets with some unrouted pins.. :           1 :
+   ------------------------------------------- : ----------- :
+
+
+Nets with Routing Errors:
+  vauxp3_IBUF
+    Unrouted Pin: dataL_reg/D
+

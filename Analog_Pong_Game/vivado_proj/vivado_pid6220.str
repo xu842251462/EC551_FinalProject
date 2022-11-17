@@ -1,0 +1,805 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 6220
+License: Customer
+
+Current time: 	Tue Nov 15 15:26:14 EST 2022
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 242 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	cnaught1
+User home directory: C:/Users/cnaught1
+User working directory: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/vivado.log
+Vivado journal file location: 	X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/vivado.jou
+Engine tmp dir: 	X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/.Xil/Vivado-6220-ECE-PHO115-02
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@XilinxLM.bu.edu
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	188 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 723 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 84 MB (+86008kb) [00:00:06]
+// [Engine Memory]: 616 MB (+494434kb) [00:00:06]
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: X:\EC551\FinalProject\Working Copy\EC551_FinalProject\Analog_Pong_Game\vivado_proj\Nexys-A7-100T-XADC.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 745 MB. GUI used memory: 48 MB. Current time: 11/15/22, 3:26:16 PM EST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 750 MB (+108085kb) [00:00:14]
+// [GUI Memory]: 93 MB (+4187kb) [00:00:15]
+// [GUI Memory]: 105 MB (+8233kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  5159 ms.
+// Tcl Message: open_project {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj' INFO: [Project 1-313] Project file moved from 'X:/EC551/FinalProject/Nexys7/vivado_proj' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [filemgmt 56-1] IPUserFilesDir: Directory not found as 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.ip_user_files'; using path 'X:/EC551/FinalProject/Nexys7/vivado_proj/Nexys-A7-100T-XADC.ip_user_files' instead. INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 819.371 ; gain = 145.012 
+// Project name: Nexys-A7-100T-XADC; location: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj; part: xc7a100tcsg324-1
+// [Engine Memory]: 864 MB (+80019kb) [00:00:19]
+dismissDialog("Open Project"); // by (cl)
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 111 MB (+368kb) [00:00:25]
+// PAPropertyPanels.initPanels (top_new.v) elapsed time: 0.2s
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// WARNING: HTimer (StateMonitor Timer) is taking 693ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 84 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK (aH, cl)
+// Elapsed time: 696 seconds
+selectCodeEditor("top_new.v", 78, 266); // cl (w, cl)
+selectCodeEditor("top_new.v", 63, 234); // cl (w, cl)
+selectCodeEditor("top_new.v", 44, 217); // cl (w, cl)
+selectCodeEditor("top_new.v", 79, 207); // cl (w, cl)
+selectCodeEditor("top_new.v", 55, 241); // cl (w, cl)
+selectCodeEditor("top_new.v", 10, 126); // cl (w, cl)
+selectCodeEditor("top_new.v", 55, 123); // cl (w, cl)
+selectCodeEditor("top_new.v", 105, 122); // cl (w, cl)
+selectCodeEditor("top_new.v", 78, 129); // cl (w, cl)
+selectCodeEditor("top_new.v", 58, 349); // cl (w, cl)
+selectCodeEditor("top_new.v", 91, 217); // cl (w, cl)
+selectCodeEditor("top_new.v", 91, 217, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 91, 228); // cl (w, cl)
+selectCodeEditor("top_new.v", 91, 228, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 71, 195); // cl (w, cl)
+selectCodeEditor("top_new.v", 71, 195, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 86, 194); // cl (w, cl)
+selectCodeEditor("top_new.v", 99, 346); // cl (w, cl)
+selectCodeEditor("top_new.v", 99, 346, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 113, 365); // cl (w, cl)
+selectCodeEditor("top_new.v", 113, 365, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 95, 386); // cl (w, cl)
+selectCodeEditor("top_new.v", 95, 386, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 85, 402); // cl (w, cl)
+selectCodeEditor("top_new.v", 85, 402, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 108, 420); // cl (w, cl)
+selectCodeEditor("top_new.v", 108, 420, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 3, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 0); // k (j, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 1); // k (j, cl)
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 0); // k (j, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 4, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 4, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 0); // k (j, cl)
+selectCodeEditor("top_new.v", 56, 365); // cl (w, cl)
+selectCodeEditor("top_new.v", 56, 365, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 114, 363); // cl (w, cl)
+selectCodeEditor("top_new.v", 114, 363, false, false, false, false, true); // cl (w, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 0); // k (j, cl)
+selectCodeEditor("top_new.v", 120, 424); // cl (w, cl)
+selectCodeEditor("top_new.v", 120, 424, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_new.v", 125, 363); // cl (w, cl)
+selectCodeEditor("top_new.v", 125, 363, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_new.v", 125, 79); // cl (w, cl)
+selectCodeEditor("top_new.v", 125, 79, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 112, 432); // cl (w, cl)
+selectCodeEditor("top_new.v", 112, 432, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_new.v", 127, 143); // cl (w, cl)
+selectCodeEditor("top_new.v", 127, 143, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 124, 451); // cl (w, cl)
+selectCodeEditor("top_new.v", 124, 451, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_new.v", 166, 162); // cl (w, cl)
+selectCodeEditor("top_new.v", 166, 162, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 118, 470); // cl (w, cl)
+selectCodeEditor("top_new.v", 118, 470, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_new.v", 172, 184); // cl (w, cl)
+selectCodeEditor("top_new.v", 172, 184, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 120, 482); // cl (w, cl)
+selectCodeEditor("top_new.v", 120, 482, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_new.v", 168, 197); // cl (w, cl)
+selectCodeEditor("top_new.v", 168, 197, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 159, 215); // cl (w, cl)
+selectCodeEditor("top_new.v", 159, 215, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 97, 402); // cl (w, cl)
+selectCodeEditor("top_new.v", 97, 402, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_new.v", 157, 109); // cl (w, cl)
+selectCodeEditor("top_new.v", 157, 109, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 81, 466); // cl (w, cl)
+selectCodeEditor("top_new.v", 81, 466, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_new.v", 147, 178); // cl (w, cl)
+selectCodeEditor("top_new.v", 155, 177); // cl (w, cl)
+selectCodeEditor("top_new.v", 155, 177, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 193, 281); // cl (w, cl)
+selectCodeEditor("top_new.v", 116, 248); // cl (w, cl)
+selectCodeEditor("top_new.v", 116, 248, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 192, 282); // cl (w, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 4); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 8); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 10, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 10, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 3); // k (j, cl)
+selectMenuItem((HResource) null, "New Vertical Group"); // JMenuItem (JidePopupMenu)
+// [GUI Memory]: 118 MB (+1234kb) [00:17:02]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 0); // k (j, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_new.v", 162, 269); // cl (w, cl)
+selectCodeEditor("top_new.v", 162, 269, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 302, 195); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 302, 195, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 305, 213); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 305, 213, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 308, 228); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 308, 228, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 305, 243); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 305, 243, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 303, 263); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 303, 263, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 304, 282); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 304, 282, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 304, 301); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 304, 301, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 170, 278); // cl (w, cl)
+selectCodeEditor("top_new.v", 170, 278, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 296, 367); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 296, 367, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 295, 381); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 295, 381, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 295, 397); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 295, 397, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 295, 415); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 295, 415, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 291, 433); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 291, 433, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 295, 438); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 295, 438, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 296, 449); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 296, 449, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 295, 461); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 295, 462, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 294, 479); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 294, 479, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 163, 349); // cl (w, cl)
+selectCodeEditor("top_new.v", 184, 215); // cl (w, cl)
+selectCodeEditor("top_new.v", 184, 215, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 309, 199); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 309, 199, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 310, 209); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 310, 209, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 306, 226); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 306, 226, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 307, 244); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 307, 244, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 191, 232); // cl (w, cl)
+selectCodeEditor("top_new.v", 191, 232, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 305, 283); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 305, 283, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 305, 297); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 305, 297, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 308, 311); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 308, 311, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 307, 333); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 307, 333, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 179, 245); // cl (w, cl)
+selectCodeEditor("top_new.v", 179, 245, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 300, 362); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 300, 362, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 303, 384); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 303, 384, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 305, 396); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 305, 396, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 306, 414); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 306, 414, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 136, 183); // cl (w, cl)
+selectCodeEditor("top_new.v", 136, 183, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 318, 450); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 318, 450, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 144, 197); // cl (w, cl)
+selectCodeEditor("top_new.v", 144, 197, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 307, 471); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 307, 471, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "Nexys-A7-100T-Master.xdc", 'v'); // cl (w, cl)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectCodeEditor("top_new.v", 214, 135); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top_new.v", 92, 427); // cl (w, cl)
+selectCodeEditor("top_new.v", 92, 427, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("top_new.v", 78, 347); // cl (w, cl)
+selectCodeEditor("top_new.v", 77, 347, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 1); // k (j, cl)
+selectCodeEditor("topmodule.v", 173, 284); // cl (w, cl)
+selectCodeEditor("topmodule.v", 173, 284, false, false, false, false, true); // cl (w, cl) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 4); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v), pong : game (game.v)]", 6, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v), pong : game (game.v), b1 : square (square.v)]", 10, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("game.v", 165, 79); // cl (w, cl)
+selectCodeEditor("game.v", 165, 79, false, false, false, false, true); // cl (w, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v), pong : game (game.v), p : paddle (paddle.v)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v), pong : game (game.v), p : paddle (paddle.v)]", 8, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("paddle.v", 172, 281); // cl (w, cl)
+selectCodeEditor("paddle.v", 172, 281, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 0); // k (j, cl)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 0); // k (j, cl)
+selectCodeEditor("top_new.v", 121, 286); // cl (w, cl)
+// Elapsed time: 54 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 34 seconds
+selectCodeEditor("top_new.v", 87, 331); // cl (w, cl)
+// Elapsed time: 33 seconds
+selectCodeEditor("top_new.v", 44, 329); // cl (w, cl)
+selectCodeEditor("top_new.v", 132, 343); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("top_new.v", 183, 365); // cl (w, cl)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_new.v", 185, 431); // cl (w, cl)
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 185, 500); // cl (w, cl)
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 167, 452); // cl (w, cl)
+selectCodeEditor("top_new.v", 186, 369); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 167, 293); // cl (w, cl)
+selectCodeEditor("top_new.v", 316, 238); // cl (w, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cl): Out-of-Context module run(s) is/are Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+dismissDialog("Out-of-Context module run(s) is/are Out-of-date"); // A (cl)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run xadc_wiz_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov 15 15:49:16 2022] Launched xadc_wiz_0_synth_1... Run output will be captured here: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.runs/xadc_wiz_0_synth_1/runme.log [Tue Nov 15 15:49:16 2022] Launched synth_1... Run output will be captured here: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 8 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 62 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK (aH, cl)
+// [GUI Memory]: 128 MB (+4361kb) [00:24:13]
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK (aH, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,026 MB. GUI used memory: 69 MB. Current time: 11/15/22, 3:50:26 PM EST
+// [Engine Memory]: 1,026 MB (+125148kb) [00:24:23]
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, xadc_wiz_0_synth_1, [Board 49-71] The board_part definition was not found for digilentinc.com:nexys-a7-100t:part0:1.0. The project's board_part property was not set, but the project's part property was set to xc7a100tcsg324-1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command. Check if board.repoPaths parameter is set and the board_part is installed from the tcl app store.. ]", 17, false); // ah (O, cl)
+// [Engine Memory]: 1,196 MB (+124596kb) [00:24:31]
+// Elapsed time: 11 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK (aH, cl)
+selectTree(PAResourceItoN.LogPanel_LOG_NAVIGATOR, "[Out-of-Context Module Runs]", 2, false); // i (O, cl)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 200, 211); // n (B, cl)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 728, 211); // n (B, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 725, 209); // n (B, cl)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 575, 212); // n (B, cl)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 575, 212, false, false, false, false, true); // n (B, cl) - Double Click
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 575, 212); // n (B, cl)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 85, 211); // n (B, cl)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 266, 211); // n (B, cl)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 507, 219); // n (B, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 611, 214); // n (B, cl)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 619, 210); // n (B, cl)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 976, 217); // n (B, cl)
+// Elapsed time: 19 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_SETTINGS, "Settings"); // ae (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // Z (q, cl)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // Z (q, cl)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // Z (q, cl)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ae (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,218 MB. GUI used memory: 71 MB. Current time: 11/15/22, 3:52:31 PM EST
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // B (f, cl)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// D (cl): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2137 ms.
+// Elapsed time: 58 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Simulation]", 1, false); // L (E, D)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Elaboration]", 2, false); // L (E, D)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Synthesis]", 3, false); // L (E, D)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Implementation]", 4, false); // L (E, D)
+dismissDialog("Settings"); // D (cl)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK (aH, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, xadc_wiz_0_synth_1, [Board 49-71] The board_part definition was not found for digilentinc.com:nexys-a7-100t:part0:1.0. The project's board_part property was not set, but the project's part property was set to xc7a100tcsg324-1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command. Check if board.repoPaths parameter is set and the board_part is installed from the tcl app store.. ]", 17, false); // ah (O, cl)
+// [GUI Memory]: 155 MB (+22416kb) [00:29:20]
+// Elapsed time: 490 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK (aH, cl)
+// Elapsed time: 31 seconds
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_param board.repoPaths {C:/Users/chris/AppData/Roaming/Xilinx/Vivado/2020.2/data/xhub/boards/}"); // aC (Z, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cl): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 16 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "Analog_Pong_Game"); // Y (Q, f)
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // q (al, f)
+setFolderChooser("X:/EC551/FinalProject/Working Copy/EC551_FinalProject");
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, f)
+setFileChooser("X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, f)
+String[] filenames31467 = {"X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/counter3bit.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/DigitToSeg.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/mux4_4bus.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/segClkDevider.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/sevensegdecoder.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/top.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/UART_TX_CTRL.vhd"};
+setFileChooser(filenames31467);
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (E, f)
+setFileChooser("X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc");
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 221 seconds
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xc7a100tcsg324"); // OverlayTextField (P, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a100tcsg324-1 ; 324 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 3, "xc7a100tcsg324-1", 0); // w (O, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a100tcsg324-1 ; 324 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 3, "xc7a100tcsg324-1", 0); // w (O, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7a100tcsg324-1 ; 324 ; 210 ; 63400 ; 126800 ; 135 ; 0 ; 240 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 6 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 3, "xc7a100tcsg324-1", 0, false, false, false, false, true); // w (O, f) - Double Click
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// by (f):  Create Project : addNotify
+selectButton("OptionPane.button", "No"); // JButton (A, H)
+// TclEventType: FILE_SET_NEW
+// Tcl Message: create_project Analog_Pong_Game {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game} -part xc7a100tcsg324-1 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  2037 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1326.305 ; gain = 0.000 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse {{X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}} 
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 301 seconds
+dismissDialog("Create Project"); // by (f)
+dismissDialog("New Project"); // f (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 164 MB (+1269kb) [00:41:45]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// by (cl):  Open Elaborated Design : addNotify
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: DigitToSeg 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,384 MB. GUI used memory: 106 MB. Current time: 11/15/22, 4:08:11 PM EST
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// Tcl Message: INFO: [Synth 8-2350] module decoder_3_8 ignored due to previous errors [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v:21] 
+// Tcl Message: Failed to read verilog 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v' 
+// Tcl Message: 2 Infos, 0 Warnings, 0 Critical Warnings and 9 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dR' command handler elapsed time: 12 seconds
+// [Engine Memory]: 1,468 MB (+221966kb) [00:42:16]
+// S (cl): Critical Messages: addNotify
+// Elapsed time: 12 seconds
+dismissDialog("Open Elaborated Design"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK (aH, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-1852] concurrent assignment to a non-net an is not permitted [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v:27]. ]", 6, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-1852] concurrent assignment to a non-net an is not permitted [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v:27]. ]", 6, true); // ah (O, cl) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-1852] concurrent assignment to a non-net an is not permitted [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v:27]. , [Synth 8-1852] concurrent assignment to a non-net an is not permitted [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v:34]. ]", 11, false, false, false, false, false, true); // ah (O, cl) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v)]", 2); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v)]", 3, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DigitToSeg (DigitToSeg.v)]", 1); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DigitToSeg (DigitToSeg.v)]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v)]", 3); // B (F, cl)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 28 seconds
+dismissFileChooser();
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 35 seconds
+dismissDialog("Add Sources"); // c (cl)
+// Elapsed time: 62 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 25 seconds
+setFileChooser("X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.xci");
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 30 seconds
+dismissDialog("Add Sources"); // c (cl)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+setFileChooser("X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 8 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Add Sources"); // c (cl)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v}} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : xil_defaultlib.top]", 5, false); // B (F, cl)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 71 seconds
+setFileChooser("X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/topmodule.v");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 76 seconds
+dismissDialog("Add Sources"); // c (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/topmodule.v}} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 5); // B (F, cl)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+String[] filenames16706 = {"X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/bg_gen.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/clock_divider.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/debounce.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/dec_bcd.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/increment_one.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/menu_screen.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/num_hex.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/paddle.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/score_to_7seg.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/start_square.v", "X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/vga640x480.v"};
+setFileChooser(filenames16706);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v), pong : game (game.v)]", 7); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v), pong : game (game.v)]", 7); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 5); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v)]", 3); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v)]", 2); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DigitToSeg (DigitToSeg.v)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DigitToSeg (DigitToSeg.v), XLXI_50 : decoder_3_8 (decoder3_8.v)]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DigitToSeg (DigitToSeg.v), XLXI_50 : decoder_3_8 (decoder3_8.v)]", 6, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DigitToSeg (DigitToSeg.v)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder3_8.v", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 2); // k (j, cl)
+selectCodeEditor("top_new.v", 104, 249); // cl (w, cl)
+selectCodeEditor("top_new.v", 107, 433); // cl (w, cl)
+selectCodeEditor("top_new.v", 107, 433); // cl (w, cl)
+selectCodeEditor("top_new.v", 107, 433, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 445, 140); // cl (w, cl)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-1852] concurrent assignment to a non-net an is not permitted [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v:27]. ]", 6); // ah (O, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DigitToSeg (DigitToSeg.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DigitToSeg (DigitToSeg.v)]", 1, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/DigitToSeg.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/DigitToSeg.v}} 
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v)]", 1); // B (F, cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder_3_8 (decoder3_8.v)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, decoder_3_8 (decoder3_8.v)]", 4, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v}} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// by (cl):  Open Elaborated Design : addNotify
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: top_new 
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: Failed to read verilog 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v' 
+// Tcl Message: 0 Infos, 0 Warnings, 0 Critical Warnings and 20 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dR' command handler elapsed time: 4 seconds
+// S (cl): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-2442] non-net port dclk_in cannot be of mode input [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v:80]. ]", 9, true); // ah (O, cl) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.v)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.v)]", 3, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 127, 299); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 127, 299, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("xadc_wiz_0.v", 108, 195); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 115, 194); // cl (w, cl)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// by (cl):  Close Hardware Manager : addNotify
+// TclEventType: HW_SESSION_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1026 ms.
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // by (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 3, false); // B (F, cl)
+// Tcl Message: current_project Nexys-A7-100T-XADC 
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 4); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 3); // B (F, cl)
+// A (cl): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci), xadc_wiz_0 (xadc_wiz_0.v)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci), xadc_wiz_0 (xadc_wiz_0.v)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 30 seconds
+selectCodeEditor("xadc_wiz_0.v", 111, 177); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xadc_wiz_0.v", 2); // k (j, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)

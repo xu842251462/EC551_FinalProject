@@ -1,0 +1,1073 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 19924
+License: Customer
+
+Current time: 	Tue Nov 15 16:17:09 EST 2022
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 242 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	cnaught1
+User home directory: C:/Users/cnaught1
+User working directory: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado.log
+Vivado journal file location: 	X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado.jou
+Engine tmp dir: 	X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/.Xil/Vivado-19924-ECE-PHO115-02
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@XilinxLM.bu.edu
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	200 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 744 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 84 MB (+85542kb) [00:00:06]
+// [Engine Memory]: 614 MB (+492542kb) [00:00:06]
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: X:\EC551\FinalProject\Working Copy\EC551_FinalProject\Analog_Pong_Game\Analog_Pong_Game.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 107 MB (+19520kb) [00:00:11]
+// [Engine Memory]: 780 MB (+141660kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  2811 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 790 MB. GUI used memory: 53 MB. Current time: 11/15/22, 4:17:14 PM EST
+// Project name: Analog_Pong_Game; location: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 824.223 ; gain = 131.023 
+dismissDialog("Open Project"); // by (cl)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.v)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.v)]", 3, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 111, 214); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "xadc_wiz_0.v", 'v'); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 346, 360); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 155, 283); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 155, 283, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 149, 245); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 812 MB. GUI used memory: 83 MB. Current time: 11/15/22, 4:18:31 PM EST
+// Elapsed time: 15 seconds
+selectCodeEditor("xadc_wiz_0.v", 188, 285); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 251, 249); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 193, 283); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 140, 79); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 239, 161); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 115 MB (+2515kb) [00:02:06]
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// by (cl):  Open Elaborated Design : addNotify
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: top_new 
+// HMemoryUtils.trashcanNow. Engine heap size: 930 MB. GUI used memory: 56 MB. Current time: 11/15/22, 4:19:16 PM EST
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1253.312 ; gain = 174.488 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'top_new' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'XADCdemo' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/top.v:22] INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v:53] INFO: [Synth 8-6157] synthesizing module 'XADC' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81848] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'XADC' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81848] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1317.383 ; gain = 238.559 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 6 Infos, 1 Warnings, 0 Critical Warnings and 5 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dR' command handler elapsed time: 13 seconds
+// [Engine Memory]: 1,272 MB (+475125kb) [00:02:26]
+// S (cl): Critical Messages: addNotify
+// Elapsed time: 13 seconds
+dismissDialog("Open Elaborated Design"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,272 MB. GUI used memory: 56 MB. Current time: 11/15/22, 4:19:31 PM EST
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK (aH, cl)
+selectCodeEditor("xadc_wiz_0.v", 292, 241); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 216, 211); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 140, 213); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 140, 213, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 32 seconds
+selectCodeEditor("xadc_wiz_0.v", 129, 283); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 129, 283, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 129, 293); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 129, 293, false, false, false, false, true); // cl (w, cl) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// by (cl):  Open Elaborated Design : addNotify
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: top_new 
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1317.383 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'top_new' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'XADCdemo' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/top.v:22] INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v:53] INFO: [Synth 8-6157] synthesizing module 'XADC' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81848] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'XADC' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81848] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1317.383 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 5 Infos, 1 Warnings, 0 Critical Warnings and 5 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dR' command handler elapsed time: 5 seconds
+// S (cl): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+selectCodeEditor("xadc_wiz_0.v", 128, 315); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 128, 315, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 136, 334); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 136, 334, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 128, 351); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 128, 351, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 127, 366); // cl (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 127, 366, false, false, false, false, true); // cl (w, cl) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// by (cl):  Open Elaborated Design : addNotify
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: top_new 
+// TclEventType: ELABORATE_START
+// HMemoryUtils.trashcanNow. Engine heap size: 1,324 MB. GUI used memory: 57 MB. Current time: 11/15/22, 4:20:51 PM EST
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1317.383 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'top_new' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'XADCdemo' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/top.v:22] INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v:53] INFO: [Synth 8-6157] synthesizing module 'XADC' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81848] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'XADC' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81848] INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (2#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v:53] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'XADCdemo' (3#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/top.v:22] INFO: [Synth 8-6157] synthesizing module 'top' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/topmodule.v:23] INFO: [Synth 8-6157] synthesizing module 'clock_divider' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/clock_divider.v:23] 
+// Tcl Message: 	Parameter DIVISOR bound to: 500000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (4#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/clock_divider.v:23] INFO: [Synth 8-6157] synthesizing module 'game' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v:23] 
+// Tcl Message: 	Parameter PW bound to: 100 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter PY bound to: 440 - type: integer  	Parameter PX bound to: 320 - type: integer  	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 360 - type: integer  	Parameter B_SIZE bound to: 20 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'vga640x480' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/vga640x480.v:23] 
+// Tcl Message: 	Parameter HS_STA bound to: 16 - type: integer  	Parameter HS_END bound to: 112 - type: integer  	Parameter HA_STA bound to: 160 - type: integer  	Parameter VS_STA bound to: 490 - type: integer  	Parameter VS_END bound to: 492 - type: integer  	Parameter VA_END bound to: 480 - type: integer  	Parameter LINE bound to: 800 - type: integer  	Parameter SCREEN bound to: 525 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'vga640x480' (5#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/vga640x480.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'paddle' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/paddle.v:23] 
+// Tcl Message: 	Parameter P_WIDTH bound to: 100 - type: integer  	Parameter P_HEIGHT bound to: 40 - type: integer  	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 440 - type: integer  	Parameter IX_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'paddle' (6#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/paddle.v:23] INFO: [Synth 8-6157] synthesizing module 'square' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 360 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'debounce' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/debounce.v:23] INFO: [Synth 8-6155] done synthesizing module 'debounce' (7#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/debounce.v:23] INFO: [Synth 8-6155] done synthesizing module 'square' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] INFO: [Synth 8-6157] synthesizing module 'square__parameterized0' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 30 - type: integer  	Parameter IY bound to: 340 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized0' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized1' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 50 - type: integer  	Parameter IY bound to: 120 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized1' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized2' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 30 - type: integer  	Parameter IY bound to: 140 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized2' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized3' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 20 - type: integer  	Parameter IY bound to: 100 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized3' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized4' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 70 - type: integer  	Parameter IY bound to: 240 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized4' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized5' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 370 - type: integer  	Parameter IY bound to: 150 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized5' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-4471] merging register 'VGA_G_reg[3:0]' into 'VGA_R_reg[3:0]' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v:228] INFO: [Synth 8-4471] merging register 'VGA_B_reg[3:0]' into 'VGA_R_reg[3:0]' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v:229] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'game' (9#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v:23] INFO: [Synth 8-6157] synthesizing module 'menu_screen' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/menu_screen.v:23] 
+// Tcl Message: 	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 440 - type: integer  	Parameter B_SIZE bound to: 20 - type: integer  	Parameter SCREEN_WIDTH bound to: 640 - type: integer  	Parameter SCREEN_HEIGHT bound to: 480 - type: integer  	Parameter VRAM_DEPTH bound to: 307200 - type: integer  	Parameter VRAM_A_WIDTH bound to: 18 - type: integer  	Parameter VRAM_D_WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-251] Loading palette. [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/menu_screen.v:102] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'start_square' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/start_square.v:23] 
+// Tcl Message: 	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 440 - type: integer  	Parameter IX_DIR bound to: 1 - type: integer  	Parameter IY_DIR bound to: 1 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'start_square' (10#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/start_square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sram' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:25] 
+// Tcl Message: 	Parameter ADDR_WIDTH bound to: 18 - type: integer  	Parameter DATA_WIDTH bound to: 6 - type: integer  	Parameter DEPTH bound to: 307200 - type: integer  	Parameter MEMFILE bound to: over.mem - type: string  
+// Tcl Message: INFO: [Synth 8-251] Loading memor @ÒÜÞR·-N3þÂ [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:38] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sram' (11#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:25] 
+// Tcl Message:  Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons : 	1: Unable to determine number of words or word size in RAM.  	2: No valid read/write found for RAM.  RAM dissolved into registers 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'menu_screen' (12#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/menu_screen.v:23] INFO: [Synth 8-6157] synthesizing module 'bg_gen' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/bg_gen.v:25] 
+// Tcl Message: 	Parameter MEMFILE bound to: gameover.mem - type: string  	Parameter PALETTE bound to: gameover_palette.mem - type: string  	Parameter SCREEN_WIDTH bound to: 640 - type: integer  	Parameter SCREEN_HEIGHT bound to: 480 - type: integer  	Parameter VRAM_DEPTH bound to: 307200 - type: integer  	Parameter VRAM_A_WIDTH bound to: 18 - type: integer  	Parameter VRAM_D_WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-251] Loading palette. [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/bg_gen.v:90] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sram__parameterized0' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:25] 
+// Tcl Message: 	Parameter ADDR_WIDTH bound to: 18 - type: integer  	Parameter DATA_WIDTH bound to: 6 - type: integer  	Parameter DEPTH bound to: 307200 - type: integer  	Parameter MEMFILE bound to: gameover.mem - type: string  
+// Tcl Message: INFO: [Synth 8-251] Loading memor ¨4JCR·-N3þÂ [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:38] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized0' (12#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:25] 
+// Tcl Message:  Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons : 	1: Unable to determine number of words or word size in RAM.  	2: No valid read/write found for RAM.  RAM dissolved into registers 
+// Tcl Message: ERROR: [Synth 8-685] variable 'vga_hs_top' should not be used in output port connection [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v:68] ERROR: [Synth 8-6156] failed synthesizing module 'top_new' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v:23] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1370.867 ; gain = 53.484 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 58 Infos, 116 Warnings, 4 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dR' command handler elapsed time: 6 seconds
+// S (cl): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // by (cl)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 209ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 276 seconds
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Synth 8-685] variable 'vga_hs_top' should not be used in output port connection [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v:68]", 0); // b (F, S)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Synth 8-685] variable 'vga_hs_top' should not be used in output port connection [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v:68]", 0, false, false, false, false, true); // b (F, S) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // S (cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-685] variable 'vga_hs_top' should not be used in output port connection [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v:68]. ]", 3, false); // ah (O, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Synth 8-685] variable 'vga_hs_top' should not be used in output port connection [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v:68]. ]", 3, false, false, false, false, false, true); // ah (O, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 1); // k (j, cl)
+selectCodeEditor("top_new.v", 147, 183); // cl (w, cl)
+selectCodeEditor("top_new.v", 147, 183, false, false, false, false, true); // cl (w, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 4, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v), pong : game (game.v)]", 6, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 1); // k (j, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("top_new.v", 87, 131); // cl (w, cl)
+selectCodeEditor("top_new.v", 87, 131, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 86, 145); // cl (w, cl)
+selectCodeEditor("top_new.v", 86, 145, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 86, 145); // cl (w, cl)
+selectCodeEditor("top_new.v", 86, 145, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_new.v", 84, 161); // cl (w, cl)
+selectCodeEditor("top_new.v", 84, 161, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 85, 183); // cl (w, cl)
+selectCodeEditor("top_new.v", 85, 184, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 86, 201); // cl (w, cl)
+selectCodeEditor("top_new.v", 86, 201, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 86, 212); // cl (w, cl)
+selectCodeEditor("top_new.v", 86, 212, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_new.v", 86, 232); // cl (w, cl)
+selectCodeEditor("top_new.v", 86, 232, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_new.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// by (cl):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a100tcsg324-1 Top: top_new 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,363 MB. GUI used memory: 58 MB. Current time: 11/15/22, 4:26:40 PM EST
+// [Engine Memory]: 1,363 MB (+28635kb) [00:09:39]
+// [Engine Memory]: 1,434 MB (+3075kb) [00:09:40]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// [GUI Memory]: 139 MB (+19376kb) [00:09:42]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  3457 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1370.867 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'top_new' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'XADCdemo' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/top.v:22] INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v:53] INFO: [Synth 8-6157] synthesizing module 'XADC' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81848] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'XADC' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81848] INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (2#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v:53] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'XADCdemo' (3#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/top.v:22] INFO: [Synth 8-6157] synthesizing module 'top' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/topmodule.v:23] INFO: [Synth 8-6157] synthesizing module 'clock_divider' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/clock_divider.v:23] 
+// Tcl Message: 	Parameter DIVISOR bound to: 500000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (4#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/clock_divider.v:23] INFO: [Synth 8-6157] synthesizing module 'game' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v:23] 
+// Tcl Message: 	Parameter PW bound to: 100 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter PY bound to: 440 - type: integer  	Parameter PX bound to: 320 - type: integer  	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 360 - type: integer  	Parameter B_SIZE bound to: 20 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'vga640x480' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/vga640x480.v:23] 
+// Tcl Message: 	Parameter HS_STA bound to: 16 - type: integer  	Parameter HS_END bound to: 112 - type: integer  	Parameter HA_STA bound to: 160 - type: integer  	Parameter VS_STA bound to: 490 - type: integer  	Parameter VS_END bound to: 492 - type: integer  	Parameter VA_END bound to: 480 - type: integer  	Parameter LINE bound to: 800 - type: integer  	Parameter SCREEN bound to: 525 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'vga640x480' (5#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/vga640x480.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'paddle' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/paddle.v:23] 
+// Tcl Message: 	Parameter P_WIDTH bound to: 100 - type: integer  	Parameter P_HEIGHT bound to: 40 - type: integer  	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 440 - type: integer  	Parameter IX_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'paddle' (6#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/paddle.v:23] INFO: [Synth 8-6157] synthesizing module 'square' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 360 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'debounce' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/debounce.v:23] INFO: [Synth 8-6155] done synthesizing module 'debounce' (7#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/debounce.v:23] INFO: [Synth 8-6155] done synthesizing module 'square' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] INFO: [Synth 8-6157] synthesizing module 'square__parameterized0' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 30 - type: integer  	Parameter IY bound to: 340 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized0' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized1' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 50 - type: integer  	Parameter IY bound to: 120 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized1' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized2' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 30 - type: integer  	Parameter IY bound to: 140 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized2' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized3' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 20 - type: integer  	Parameter IY bound to: 100 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized3' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized4' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 70 - type: integer  	Parameter IY bound to: 240 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized4' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized5' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 370 - type: integer  	Parameter IY bound to: 150 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized5' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-4471] merging register 'VGA_G_reg[3:0]' into 'VGA_R_reg[3:0]' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v:228] INFO: [Synth 8-4471] merging register 'VGA_B_reg[3:0]' into 'VGA_R_reg[3:0]' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v:229] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'game' (9#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v:23] INFO: [Synth 8-6157] synthesizing module 'menu_screen' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/menu_screen.v:23] 
+// Tcl Message: 	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 440 - type: integer  	Parameter B_SIZE bound to: 20 - type: integer  	Parameter SCREEN_WIDTH bound to: 640 - type: integer  	Parameter SCREEN_HEIGHT bound to: 480 - type: integer  	Parameter VRAM_DEPTH bound to: 307200 - type: integer  	Parameter VRAM_A_WIDTH bound to: 18 - type: integer  	Parameter VRAM_D_WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-251] Loading palette. [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/menu_screen.v:102] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'start_square' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/start_square.v:23] 
+// Tcl Message: 	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 440 - type: integer  	Parameter IX_DIR bound to: 1 - type: integer  	Parameter IY_DIR bound to: 1 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'start_square' (10#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/start_square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sram' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:25] 
+// Tcl Message: 	Parameter ADDR_WIDTH bound to: 18 - type: integer  	Parameter DATA_WIDTH bound to: 6 - type: integer  	Parameter DEPTH bound to: 307200 - type: integer  	Parameter MEMFILE bound to: over.mem - type: string  
+// Tcl Message: INFO: [Synth 8-251] Loading memor @ÒÜÞR·-N3þÂ [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:38] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sram' (11#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:25] 
+// Tcl Message:  Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons : 	1: Unable to determine number of words or word size in RAM.  	2: No valid read/write found for RAM.  RAM dissolved into registers 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'menu_screen' (12#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/menu_screen.v:23] INFO: [Synth 8-6157] synthesizing module 'bg_gen' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/bg_gen.v:25] 
+// Tcl Message: 	Parameter MEMFILE bound to: gameover.mem - type: string  	Parameter PALETTE bound to: gameover_palette.mem - type: string  	Parameter SCREEN_WIDTH bound to: 640 - type: integer  	Parameter SCREEN_HEIGHT bound to: 480 - type: integer  	Parameter VRAM_DEPTH bound to: 307200 - type: integer  	Parameter VRAM_A_WIDTH bound to: 18 - type: integer  	Parameter VRAM_D_WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-251] Loading palette. [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/bg_gen.v:90] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sram__parameterized0' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:25] 
+// Tcl Message: 	Parameter ADDR_WIDTH bound to: 18 - type: integer  	Parameter DATA_WIDTH bound to: 6 - type: integer  	Parameter DEPTH bound to: 307200 - type: integer  	Parameter MEMFILE bound to: gameover.mem - type: string  
+// Tcl Message: INFO: [Synth 8-251] Loading memor ¨4JCR·-N3þÂ [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:38] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized0' (12#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:25] 
+// Tcl Message:  Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons : 	1: Unable to determine number of words or word size in RAM.  	2: No valid read/write found for RAM.  RAM dissolved into registers 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1377.316 ; gain = 6.449 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1377.316 ; gain = 6.449 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1377.316 ; gain = 6.449 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 11 IBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc] 
+// Tcl Message: Finished Parsing XDC File [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1503.887 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Elapsed time: 18 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1509.512 ; gain = 138.645 
+// Tcl Message: 65 Infos, 135 Warnings, 22 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1509.512 ; gain = 138.645 
+// [GUI Memory]: 150 MB (+3984kb) [00:09:45]
+// 'dR' command handler elapsed time: 20 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1891 ms.
+// S (cl): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // by (cl)
+// [Engine Memory]: 1,509 MB (+2677kb) [00:09:47]
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+expandTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "vga_r_top (4) ; OUT ;  ;  ; (Multiple) ; (Multiple) ; (Multiple) ; (Multiple) ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 6); // z (O, cl)
+selectTreeTable(PAResourceQtoS.SignalTreePanel_SIGNAL_TREE_TABLE, "vga_r_top[2] ; OUT ;  ;  ;  ;  ; default (LVCMOS18) ; 1.8 ;  ; 12 ; SLOW ; NONE ; FP_VTT_50 ; ", 8, "default (LVCMOS18)", 6, false); // z (O, cl)
+// TclEventType: SIGNAL_MODIFY
+// Tcl Message: set_property IOSTANDARD LVCMOS33 [get_ports [list {vga_r_top[2]}]] 
+// Elapsed time: 11 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK (aH, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 4); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_ADC : XADCdemo (top.v)]", 2); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 9); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 609, 230); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 522, 235); // cl (w, cl)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// ad (cl): Design Modified on Disk: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_RELOAD, "Reload"); // a (ad)
+// by (cl):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,515 MB. GUI used memory: 68 MB. Current time: 11/15/22, 4:27:43 PM EST
+// Engine heap size: 1,515 MB. GUI used memory: 69 MB. Current time: 11/15/22, 4:27:43 PM EST
+// WARNING: HEventQueue.dispatchEvent() is taking  1898 ms.
+// Tcl Message: refresh_design 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,524 MB. GUI used memory: 67 MB. Current time: 11/15/22, 4:27:45 PM EST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// [Engine Memory]: 1,606 MB (+22772kb) [00:10:46]
+// WARNING: HEventQueue.dispatchEvent() is taking  2952 ms.
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc] 
+// Tcl Message: Finished Parsing XDC File [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1670.305 ; gain = 135.090 
+// S (cl): Critical Messages: addNotify
+dismissDialog("Reloading"); // by (cl)
+dismissDialog("Design Modified on Disk"); // ad (cl)
+// Elapsed time: 16 seconds
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Common 17-55] 'set_property' expects at least one object. [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc:68]. Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.", 16); // b (F, S)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,671 MB. GUI used memory: 92 MB. Current time: 11/15/22, 4:28:06 PM EST
+// Elapsed time: 48 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 402, 164); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 2); // k (j, cl)
+selectCodeEditor("top_new.v", 91, 144); // cl (w, cl)
+selectCodeEditor("top_new.v", 91, 144, false, false, false, false, true); // cl (w, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 6); // k (j, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 9, 173); // cl (w, cl)
+// Elapsed time: 16 seconds
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 296, 184); // cl (w, cl)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cS, cl)
+// by (cl):  Reloading : addNotify
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,671 MB. GUI used memory: 71 MB. Current time: 11/15/22, 4:29:29 PM EST
+// Engine heap size: 1,671 MB. GUI used memory: 71 MB. Current time: 11/15/22, 4:29:29 PM EST
+// WARNING: HEventQueue.dispatchEvent() is taking  1558 ms.
+// Tcl Message: refresh_design 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,671 MB. GUI used memory: 68 MB. Current time: 11/15/22, 4:29:31 PM EST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Package: addNotify
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2836 ms.
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc] 
+// Tcl Message: Finished Parsing XDC File [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1743.582 ; gain = 0.000 
+// S (cl): Critical Messages: addNotify
+dismissDialog("Reloading"); // by (cl)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cl)
+// [Engine Memory]: 1,687 MB (+803kb) [00:12:47]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package", 0); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_PACKAGE, "Package"); // A
+// Device view-level: 0.0
+closeView(PAResourceOtoP.PAViews_DEVICE, "Device"); // U
+// HMemoryUtils.trashcanNow. Engine heap size: 1,699 MB. GUI used memory: 93 MB. Current time: 11/15/22, 4:29:51 PM EST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 4); // k (j, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 529, 164); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 529, 164, false, false, false, false, true); // cl (w, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 0); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 4); // k (j, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 1, 164); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_new.v", 0); // k (j, cl)
+selectCodeEditor("top_new.v", 343, 333); // cl (w, cl)
+selectCodeEditor("top_new.v", 191, 328); // cl (w, cl)
+selectCodeEditor("top_new.v", 198, 332); // cl (w, cl)
+selectCodeEditor("top_new.v", 194, 215); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_new.v", 109, 165); // cl (w, cl)
+selectCodeEditor("top_new.v", 284, 173); // cl (w, cl)
+selectCodeEditor("top_new.v", 79, 126); // cl (w, cl)
+selectCodeEditor("top_new.v", 79, 126, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_new.v", 161, 189); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cS, cl)
+// by (cl):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// TclEventType: ELABORATE_START
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1743.582 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'top_new' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'XADCdemo' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/top.v:22] INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v:53] INFO: [Synth 8-6157] synthesizing module 'XADC' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81848] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'XADC' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81848] INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (2#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v:53] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'XADCdemo' (3#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/top.v:22] INFO: [Synth 8-6157] synthesizing module 'top' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/topmodule.v:23] INFO: [Synth 8-6157] synthesizing module 'clock_divider' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/clock_divider.v:23] 
+// Tcl Message: 	Parameter DIVISOR bound to: 500000 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (4#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/clock_divider.v:23] INFO: [Synth 8-6157] synthesizing module 'game' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v:23] 
+// Tcl Message: 	Parameter PW bound to: 100 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter PY bound to: 440 - type: integer  	Parameter PX bound to: 320 - type: integer  	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 360 - type: integer  	Parameter B_SIZE bound to: 20 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'vga640x480' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/vga640x480.v:23] 
+// Tcl Message: 	Parameter HS_STA bound to: 16 - type: integer  	Parameter HS_END bound to: 112 - type: integer  	Parameter HA_STA bound to: 160 - type: integer  	Parameter VS_STA bound to: 490 - type: integer  	Parameter VS_END bound to: 492 - type: integer  	Parameter VA_END bound to: 480 - type: integer  	Parameter LINE bound to: 800 - type: integer  	Parameter SCREEN bound to: 525 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'vga640x480' (5#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/vga640x480.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'paddle' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/paddle.v:23] 
+// Tcl Message: 	Parameter P_WIDTH bound to: 100 - type: integer  	Parameter P_HEIGHT bound to: 40 - type: integer  	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 440 - type: integer  	Parameter IX_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'paddle' (6#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/paddle.v:23] INFO: [Synth 8-6157] synthesizing module 'square' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 360 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'debounce' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/debounce.v:23] INFO: [Synth 8-6155] done synthesizing module 'debounce' (7#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/debounce.v:23] INFO: [Synth 8-6155] done synthesizing module 'square' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] INFO: [Synth 8-6157] synthesizing module 'square__parameterized0' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 30 - type: integer  	Parameter IY bound to: 340 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized0' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized1' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 50 - type: integer  	Parameter IY bound to: 120 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized1' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized2' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 30 - type: integer  	Parameter IY bound to: 140 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized2' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized3' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 20 - type: integer  	Parameter IY bound to: 100 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized3' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized4' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 70 - type: integer  	Parameter IY bound to: 240 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized4' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'square__parameterized5' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: 	Parameter PY bound to: 440 - type: integer  	Parameter PH bound to: 40 - type: integer  	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 370 - type: integer  	Parameter IY bound to: 150 - type: integer  	Parameter IY_DIR bound to: 0 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'square__parameterized5' (8#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v:23] 
+// Tcl Message: INFO: [Synth 8-4471] merging register 'VGA_G_reg[3:0]' into 'VGA_R_reg[3:0]' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v:228] INFO: [Synth 8-4471] merging register 'VGA_B_reg[3:0]' into 'VGA_R_reg[3:0]' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v:229] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'game' (9#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v:23] INFO: [Synth 8-6157] synthesizing module 'menu_screen' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/menu_screen.v:23] 
+// Tcl Message: 	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 440 - type: integer  	Parameter B_SIZE bound to: 20 - type: integer  	Parameter SCREEN_WIDTH bound to: 640 - type: integer  	Parameter SCREEN_HEIGHT bound to: 480 - type: integer  	Parameter VRAM_DEPTH bound to: 307200 - type: integer  	Parameter VRAM_A_WIDTH bound to: 18 - type: integer  	Parameter VRAM_D_WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-251] Loading palette. [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/menu_screen.v:102] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'start_square' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/start_square.v:23] 
+// Tcl Message: 	Parameter H_SIZE bound to: 20 - type: integer  	Parameter IX bound to: 320 - type: integer  	Parameter IY bound to: 440 - type: integer  	Parameter IX_DIR bound to: 1 - type: integer  	Parameter IY_DIR bound to: 1 - type: integer  	Parameter D_WIDTH bound to: 640 - type: integer  	Parameter D_HEIGHT bound to: 480 - type: integer  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'start_square' (10#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/start_square.v:23] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sram' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:25] 
+// Tcl Message: 	Parameter ADDR_WIDTH bound to: 18 - type: integer  	Parameter DATA_WIDTH bound to: 6 - type: integer  	Parameter DEPTH bound to: 307200 - type: integer  	Parameter MEMFILE bound to: over.mem - type: string  
+// Tcl Message: INFO: [Synth 8-251] Loading memor @ÒÜÞR·-N3þÂ [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:38] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sram' (11#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:25] 
+// Tcl Message:  Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons : 	1: Unable to determine number of words or word size in RAM.  	2: No valid read/write found for RAM.  RAM dissolved into registers 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'menu_screen' (12#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/menu_screen.v:23] INFO: [Synth 8-6157] synthesizing module 'bg_gen' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/bg_gen.v:25] 
+// Tcl Message: 	Parameter MEMFILE bound to: gameover.mem - type: string  	Parameter PALETTE bound to: gameover_palette.mem - type: string  	Parameter SCREEN_WIDTH bound to: 640 - type: integer  	Parameter SCREEN_HEIGHT bound to: 480 - type: integer  	Parameter VRAM_DEPTH bound to: 307200 - type: integer  	Parameter VRAM_A_WIDTH bound to: 18 - type: integer  	Parameter VRAM_D_WIDTH bound to: 6 - type: integer  
+// Tcl Message: INFO: [Synth 8-251] Loading palette. [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/bg_gen.v:90] 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'sram__parameterized0' [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:25] 
+// Tcl Message: 	Parameter ADDR_WIDTH bound to: 18 - type: integer  	Parameter DATA_WIDTH bound to: 6 - type: integer  	Parameter DEPTH bound to: 307200 - type: integer  	Parameter MEMFILE bound to: gameover.mem - type: string  
+// Tcl Message: INFO: [Synth 8-251] Loading memor ¨4JCR·-N3þÂ [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:38] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'sram__parameterized0' (12#1) [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:25] 
+// Tcl Message:  Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons : 	1: Unable to determine number of words or word size in RAM.  	2: No valid read/write found for RAM.  RAM dissolved into registers 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,724 MB. GUI used memory: 92 MB. Current time: 11/15/22, 4:30:56 PM EST
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1746.230 ; gain = 2.648 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1746.230 ; gain = 2.648 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1746.230 ; gain = 2.648 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// Engine heap size: 1,724 MB. GUI used memory: 123 MB. Current time: 11/15/22, 4:31:01 PM EST
+// WARNING: HEventQueue.dispatchEvent() is taking  1396 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,724 MB. GUI used memory: 73 MB. Current time: 11/15/22, 4:31:01 PM EST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_REMOVE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,724 MB. GUI used memory: 71 MB. Current time: 11/15/22, 4:31:03 PM EST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  2454 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Opt 31-140] Inserted 11 IBUFs to IO ports without IO buffers. 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc] 
+// Tcl Message: Finished Parsing XDC File [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Elapsed time: 17 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1825.480 ; gain = 81.898 
+// S (cl): Critical Messages: addNotify
+dismissDialog("Reloading"); // by (cl)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Synth 8-4445] could not open $readmem data file 'over_palette.mem'; please make sure the file is added to project and has read permission, ignoring [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/menu_screen.v:103]", 0); // b (F, S)
+selectList(PAResourceAtoD.CmdMsgDialog_MESSAGES, "[Synth 8-4445] could not open $readmem data file 'over.mem'; please make sure the file is added to project and has read permission, ignoring [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v:39]", 1); // b (F, S)
+// [Engine Memory]: 1,775 MB (+3908kb) [00:14:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,789 MB. GUI used memory: 95 MB. Current time: 11/15/22, 4:31:27 PM EST
+// Elapsed time: 13 seconds
+dismissDialog("Critical Messages"); // S (cl)
+// Elapsed time: 96 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // B (F, cl)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+// Elapsed time: 14 seconds
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+// 'h' command handler elapsed time: 17 seconds
+dismissDialog("Add Sources"); // c (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v)]", 3); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v), menu_screen : menu_screen (menu_screen.v)]", 6, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_new (top_new.v), top_Pong : top (topmodule.v), menu_screen : menu_screen (menu_screen.v)]", 6, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// Elapsed time: 16 seconds
+selectCodeEditor("menu_screen.v", 144, 279); // cl (w, cl)
+selectCodeEditor("menu_screen.v", 144, 279, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("menu_screen.v", 169, 283); // cl (w, cl)
+selectCodeEditor("menu_screen.v", 169, 283, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("menu_screen.v", 135, 286); // cl (w, cl)
+selectCodeEditor("menu_screen.v", 135, 286, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("menu_screen.v", 378, 188); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Nexys-A7-100T-Master.xdc", 4); // k (j, cl)
+closeMainWindow("Analog_Pong_Game - [X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.xpr] - Vivado 2019.1"); // cl
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)

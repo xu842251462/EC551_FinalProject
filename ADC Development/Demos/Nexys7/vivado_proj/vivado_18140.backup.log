@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 15 15:46:36 2022
+# Process ID: 18140
+# Current directory: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19256 X:\EC551\FinalProject\Working Copy\EC551_FinalProject\ADC Development\Demos\Nexys7\vivado_proj\Nexys-A7-100T-XADC.xpr
+# Log file: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/vivado.log
+# Journal file: X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj'
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/repo'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'x:/EC551/FinalProject/Working Copy/EC551_FinalProject/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-2162] IP 'xadc_wiz_0' is locked:
+* IP definition 'XADC Wizard (3.3)' for IP 'xadc_wiz_0' (customized with software release 2018.2) has a different revision in the IP Catalog.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 819.109 ; gain = 143.242
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 15 16:16:53 2022...
