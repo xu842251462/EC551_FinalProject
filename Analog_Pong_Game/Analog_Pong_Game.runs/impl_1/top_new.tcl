@@ -63,25 +63,93 @@ proc step_failed { step } {
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
+start_step init_design
+set ACTIVE_STEP init_design
 set rc [catch {
-  create_msg_db write_bitstream.pb
+  create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
-  set_param synth.incrementalSynthesisCache {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/.Xil/Vivado-4536-ECE-PHO115-02/incrSyn}
-  open_checkpoint top_new_routed.dcp
-  set_property webtalk.parent_dir {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.cache/wt} [current_project]
-  catch { write_mem_info -force top_new.mmi }
-  write_bitstream -force top_new.bit 
-  catch {write_debug_probes -quiet -force top_new}
-  catch {file copy -force top_new.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
+  set_param synth.incrementalSynthesisCache {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/.Xil/Vivado-8560-ECE-PHO115-22/incrSyn}
+  create_project -in_memory -part xc7a100tcsg324-1
+  set_property design_mode GateLvl [current_fileset]
+  set_param project.singleFileAddWarning.threshold 0
+  set_property webtalk.parent_dir {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.cache/wt} [current_project]
+  set_property parent.project_path {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.xpr} [current_project]
+  set_property ip_output_repo {{X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.cache/ip}} [current_project]
+  set_property ip_cache_permissions {read write} [current_project]
+  add_files -quiet {{X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.runs/synth_1/top_new.dcp}}
+  read_xdc {{X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}}
+  link_design -top top_new -part xc7a100tcsg324-1
+  close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
-  step_failed write_bitstream
+  step_failed init_design
   return -code error $RESULT
 } else {
-  end_step write_bitstream
+  end_step init_design
+  unset ACTIVE_STEP 
+}
+
+start_step opt_design
+set ACTIVE_STEP opt_design
+set rc [catch {
+  create_msg_db opt_design.pb
+  opt_design 
+  write_checkpoint -force top_new_opt.dcp
+  create_report "impl_1_opt_report_drc_0" "report_drc -file top_new_drc_opted.rpt -pb top_new_drc_opted.pb -rpx top_new_drc_opted.rpx"
+  close_msg_db -file opt_design.pb
+} RESULT]
+if {$rc} {
+  step_failed opt_design
+  return -code error $RESULT
+} else {
+  end_step opt_design
+  unset ACTIVE_STEP 
+}
+
+start_step place_design
+set ACTIVE_STEP place_design
+set rc [catch {
+  create_msg_db place_design.pb
+  if { [llength [get_debug_cores -quiet] ] > 0 }  { 
+    implement_debug_core 
+  } 
+  place_design 
+  write_checkpoint -force top_new_placed.dcp
+  create_report "impl_1_place_report_io_0" "report_io -file top_new_io_placed.rpt"
+  create_report "impl_1_place_report_utilization_0" "report_utilization -file top_new_utilization_placed.rpt -pb top_new_utilization_placed.pb"
+  create_report "impl_1_place_report_control_sets_0" "report_control_sets -verbose -file top_new_control_sets_placed.rpt"
+  close_msg_db -file place_design.pb
+} RESULT]
+if {$rc} {
+  step_failed place_design
+  return -code error $RESULT
+} else {
+  end_step place_design
+  unset ACTIVE_STEP 
+}
+
+start_step route_design
+set ACTIVE_STEP route_design
+set rc [catch {
+  create_msg_db route_design.pb
+  route_design 
+  write_checkpoint -force top_new_routed.dcp
+  create_report "impl_1_route_report_drc_0" "report_drc -file top_new_drc_routed.rpt -pb top_new_drc_routed.pb -rpx top_new_drc_routed.rpx"
+  create_report "impl_1_route_report_methodology_0" "report_methodology -file top_new_methodology_drc_routed.rpt -pb top_new_methodology_drc_routed.pb -rpx top_new_methodology_drc_routed.rpx"
+  create_report "impl_1_route_report_power_0" "report_power -file top_new_power_routed.rpt -pb top_new_power_summary_routed.pb -rpx top_new_power_routed.rpx"
+  create_report "impl_1_route_report_route_status_0" "report_route_status -file top_new_route_status.rpt -pb top_new_route_status.pb"
+  create_report "impl_1_route_report_timing_summary_0" "report_timing_summary -max_paths 10 -file top_new_timing_summary_routed.rpt -pb top_new_timing_summary_routed.pb -rpx top_new_timing_summary_routed.rpx -warn_on_violation "
+  create_report "impl_1_route_report_incremental_reuse_0" "report_incremental_reuse -file top_new_incremental_reuse_routed.rpt"
+  create_report "impl_1_route_report_clock_utilization_0" "report_clock_utilization -file top_new_clock_utilization_routed.rpt"
+  create_report "impl_1_route_report_bus_skew_0" "report_bus_skew -warn_on_violation -file top_new_bus_skew_routed.rpt -pb top_new_bus_skew_routed.pb -rpx top_new_bus_skew_routed.rpx"
+  close_msg_db -file route_design.pb
+} RESULT]
+if {$rc} {
+  write_checkpoint -force top_new_routed_error.dcp
+  step_failed route_design
+  return -code error $RESULT
+} else {
+  end_step route_design
   unset ACTIVE_STEP 
 }
 

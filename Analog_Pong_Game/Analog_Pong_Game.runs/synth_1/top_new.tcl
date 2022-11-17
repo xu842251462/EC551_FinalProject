@@ -18,7 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 3
-set_param synth.incrementalSynthesisCache {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/.Xil/Vivado-4536-ECE-PHO115-02/incrSyn}
+set_param synth.incrementalSynthesisCache {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/.Xil/Vivado-8560-ECE-PHO115-22/incrSyn}
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
@@ -26,43 +26,45 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.cache/wt} [current_project]
-set_property parent.project_path {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.xpr} [current_project]
+set_property webtalk.parent_dir {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.cache/wt} [current_project]
+set_property parent.project_path {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo {x:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_mem {
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/bitmaps/over_palette.mem}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/bitmaps/gameover_palette.mem}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/bitmaps/over.mem}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/bitmaps/gameover.mem}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/bitmaps/over_palette.mem}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/bitmaps/gameover_palette.mem}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/bitmaps/over.mem}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/bitmaps/gameover.mem}
 }
 read_verilog -library xil_defaultlib {
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/DigitToSeg.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/bg_gen.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/clock_divider.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/counter3bit.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/debounce.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/dec_bcd.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/game.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/increment_one.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/menu_screen.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/mux4_4bus.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/num_hex.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/paddle.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/score_to_7seg.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/segClkDevider.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/sevensegdecoder.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/square.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/sram.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/start_square.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/top.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/topmodule.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Pong Game/hdl/vga640x480.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v}
-  {X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/DigitToSeg.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/analog2game.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/bg_gen.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/clock_divider.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/counter3bit.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/debounce.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/dec_bcd.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/game.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/increment_one.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/menu_screen.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/mux4_4bus.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/num_hex.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/paddle.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/score_to_7seg.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/segClkDevider.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/sevensegdecoder.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/square.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/sram.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/start_square.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/top.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/topmodule.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Pong Game/hdl/vga640x480.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_1/xadc_wiz_1.v}
+  {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/new/top_new.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -72,8 +74,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}}
-set_property used_in_implementation false [get_files {{X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}}]
+read_xdc {{X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}}
+set_property used_in_implementation false [get_files {{X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

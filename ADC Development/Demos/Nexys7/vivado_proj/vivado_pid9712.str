@@ -1,0 +1,478 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 9712
+License: Customer
+
+Current time: 	Thu Nov 17 14:55:02 EST 2022
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 138 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	cnaught1
+User home directory: C:/Users/cnaught1
+User working directory: X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/vivado.log
+Vivado journal file location: 	X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/vivado.jou
+Engine tmp dir: 	X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/.Xil/Vivado-9712-ECE-PHO115-22
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@XilinxLM.bu.edu
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 642 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 84 MB (+85915kb) [00:00:08]
+// [Engine Memory]: 596 MB (+473352kb) [00:00:08]
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: X:\EC551\FinalProject\working copy 11.17\EC551_FinalProject\ADC Development\Demos\Nexys7\vivado_proj\Nexys-A7-100T-XADC.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 677 MB. GUI used memory: 49 MB. Current time: 11/17/22, 2:55:04 PM EST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 740 MB (+119559kb) [00:00:15]
+// [GUI Memory]: 94 MB (+5443kb) [00:00:16]
+// [Engine Memory]: 777 MB (+402kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  4638 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1004 ms.
+// Tcl Message: open_project {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj' INFO: [Project 1-313] Project file moved from 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// [Engine Memory]: 837 MB (+21960kb) [00:00:20]
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 834.680 ; gain = 195.082 
+// Project name: Nexys-A7-100T-XADC; location: X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // by (cl)
+// [GUI Memory]: 101 MB (+2240kb) [00:00:21]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 884 MB (+5622kb) [00:00:24]
+// PAPropertyPanels.initPanels (top.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 884 MB. GUI used memory: 57 MB. Current time: 11/17/22, 2:55:19 PM EST
+selectCodeEditor("top.v", 154, 280); // cl (w, cl)
+selectCodeEditor("top.v", 123, 230); // cl (w, cl)
+selectCodeEditor("top.v", 123, 230, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 128, 231); // cl (w, cl)
+selectCodeEditor("top.v", 120, 266); // cl (w, cl)
+selectCodeEditor("top.v", 120, 266, false, false, false, false, true); // cl (w, cl) - Double Click
+// WARNING: HTimer (StateMonitor Timer) is taking 801ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 77 seconds
+selectCodeEditor("top.v", 112, 216); // cl (w, cl)
+selectCodeEditor("top.v", 112, 216, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 72 seconds
+selectCodeEditor("top.v", 164, 266); // cl (w, cl)
+selectCodeEditor("top.v", 112, 269); // cl (w, cl)
+selectCodeEditor("top.v", 112, 269, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 103, 262); // cl (w, cl)
+selectCodeEditor("top.v", 103, 262, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 94, 247); // cl (w, cl)
+selectCodeEditor("top.v", 94, 247, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 95, 246); // cl (w, cl)
+selectCodeEditor("top.v", 95, 246); // cl (w, cl)
+selectCodeEditor("top.v", 114, 267); // cl (w, cl)
+selectCodeEditor("top.v", 98, 246); // cl (w, cl)
+selectCodeEditor("top.v", 98, 246, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 116, 112); // cl (w, cl)
+selectCodeEditor("top.v", 116, 112, false, false, false, false, true); // cl (w, cl) - Double Click
+// [GUI Memory]: 108 MB (+2568kb) [00:03:36]
+// Elapsed time: 59 seconds
+selectCodeEditor("top.v", 98, 194); // cl (w, cl)
+selectCodeEditor("top.v", 98, 194, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 112, 214); // cl (w, cl)
+selectCodeEditor("top.v", 112, 214, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 131, 214); // cl (w, cl)
+selectCodeEditor("top.v", 131, 214, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 57 seconds
+selectCodeEditor("top.v", 101, 194); // cl (w, cl)
+selectCodeEditor("top.v", 96, 196); // cl (w, cl)
+selectCodeEditor("top.v", 96, 196, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 212, 209); // cl (w, cl)
+selectCodeEditor("top.v", 199, 208); // cl (w, cl)
+selectCodeEditor("top.v", 199, 208, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 209, 209); // cl (w, cl)
+selectCodeEditor("top.v", 201, 212); // cl (w, cl)
+selectCodeEditor("top.v", 201, 212, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("top.v", 200, 259); // cl (w, cl)
+selectCodeEditor("top.v", 200, 259, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 209, 257); // cl (w, cl)
+selectCodeEditor("top.v", 213, 261); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("top.v", 206, 280); // cl (w, cl)
+selectCodeEditor("top.v", 180, 281); // cl (w, cl)
+selectCodeEditor("top.v", 176, 281, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 202, 281); // cl (w, cl)
+selectCodeEditor("top.v", 176, 278); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 214ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 117 seconds
+selectCodeEditor("top.v", 240, 168); // cl (w, cl)
+selectCodeEditor("top.v", 41, 282); // cl (w, cl)
+// Elapsed time: 347 seconds
+selectCodeEditor("top.v", 253, 340); // cl (w, cl)
+selectCodeEditor("top.v", 18, 77); // cl (w, cl)
+selectCodeEditor("top.v", 3, 179); // cl (w, cl)
+selectCodeEditor("top.v", 264, 451, true, false, false, false, false); // cl (w, cl) - Shift Key
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+// Elapsed time: 92 seconds
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+// Elapsed time: 244 seconds
+selectCodeEditor("top.v", 626, 179); // cl (w, cl)
+selectCodeEditor("top.v", 173, 228); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+// [GUI Memory]: 114 MB (+343kb) [00:21:32]
+// Elapsed time: 123 seconds
+selectCodeEditor("top.v", 228, 366); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 160, 182); // cl (w, cl)
+selectCodeEditor("top.v", 160, 182, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 164, 198); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("top.v", 143, 316); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+// Elapsed time: 39 seconds
+selectCodeEditor("top.v", 136, 330); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+// Elapsed time: 53 seconds
+selectCodeEditor("top.v", 164, 249); // cl (w, cl)
+selectCodeEditor("top.v", 164, 249, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 167, 252); // cl (w, cl)
+selectCodeEditor("top.v", 167, 252, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 170, 248); // cl (w, cl)
+selectCodeEditor("top.v", 170, 248, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 166, 244); // cl (w, cl)
+selectCodeEditor("top.v", 166, 244, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 22 seconds
+selectCodeEditor("top.v", 163, 247); // cl (w, cl)
+selectCodeEditor("top.v", 164, 247, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 177, 250); // cl (w, cl)
+selectCodeEditor("top.v", 177, 250, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 170, 244); // cl (w, cl)
+selectCodeEditor("top.v", 170, 244, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 161, 247); // cl (w, cl)
+selectCodeEditor("top.v", 161, 247, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 161, 247); // cl (w, cl)
+selectCodeEditor("top.v", 165, 260); // cl (w, cl)
+selectCodeEditor("top.v", 171, 250); // cl (w, cl)
+selectCodeEditor("top.v", 171, 250, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 167, 269); // cl (w, cl)
+selectCodeEditor("top.v", 174, 246); // cl (w, cl)
+selectCodeEditor("top.v", 169, 243); // cl (w, cl)
+selectCodeEditor("top.v", 169, 243, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 169, 248); // cl (w, cl)
+selectCodeEditor("top.v", 193, 234); // cl (w, cl)
+selectCodeEditor("top.v", 138, 332); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+// Elapsed time: 33 seconds
+selectCodeEditor("top.v", 552, 397); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 884 MB. GUI used memory: 57 MB. Current time: 11/17/22, 3:25:20 PM EST
+// Elapsed time: 394 seconds
+selectCodeEditor("top.v", 471, 217); // cl (w, cl)
+// Elapsed time: 90 seconds
+selectCodeEditor("top.v", 221, 213); // cl (w, cl)
+// Elapsed time: 15 seconds
+selectCodeEditor("top.v", 196, 350); // cl (w, cl)
+selectCodeEditor("top.v", 125, 217); // cl (w, cl)
+selectCodeEditor("top.v", 125, 216, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 48 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 2, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 2, false, false, false, false, false, true); // B (F, cl) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 2); // B (F, cl)
+// A (cl): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci), xadc_wiz_0 (xadc_wiz_0.v)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci), xadc_wiz_0 (xadc_wiz_0.v)]", 3, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 360 seconds
+selectCodeEditor("xadc_wiz_0.v", 407, 279); // D (w, cl)
+// Elapsed time: 56 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+selectCodeEditor("top.v", 114, 349); // cl (w, cl)
+selectCodeEditor("top.v", 114, 349, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 125, 347); // cl (w, cl)
+selectCodeEditor("top.v", 125, 347, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 117, 353); // cl (w, cl)
+selectCodeEditor("top.v", 117, 353, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 71, 352); // cl (w, cl)
+selectCodeEditor("top.v", 71, 352, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 87, 354); // cl (w, cl)
+selectCodeEditor("top.v", 87, 354, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 100, 353); // cl (w, cl)
+selectCodeEditor("top.v", 113, 350); // cl (w, cl)
+selectCodeEditor("top.v", 113, 349, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 84, 349); // cl (w, cl)
+selectCodeEditor("top.v", 125, 354); // cl (w, cl)
+selectCodeEditor("top.v", 36, 348); // cl (w, cl)
+selectCodeEditor("top.v", 134, 346); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 78, 328); // cl (w, cl)
+selectCodeEditor("top.v", 78, 328, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 157, 330); // cl (w, cl)
+selectCodeEditor("top.v", 157, 330, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 81, 331); // cl (w, cl)
+selectCodeEditor("top.v", 81, 331, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 154, 332); // cl (w, cl)
+selectCodeEditor("top.v", 154, 332, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 81, 349); // cl (w, cl)
+selectCodeEditor("top.v", 80, 347, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 108, 350); // cl (w, cl)
+selectCodeEditor("top.v", 116, 350); // cl (w, cl)
+selectCodeEditor("top.v", 82, 329); // cl (w, cl)
+selectCodeEditor("top.v", 82, 329, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 190, 417); // cl (w, cl)
+selectCodeEditor("top.v", 190, 417, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 192, 437); // cl (w, cl)
+selectCodeEditor("top.v", 191, 437, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 195, 455); // cl (w, cl)
+selectCodeEditor("top.v", 195, 455, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 67 seconds
+selectCodeEditor("top.v", 77, 236); // cl (w, cl)
+selectCodeEditor("top.v", 78, 231); // cl (w, cl)
+selectCodeEditor("top.v", 160, 226); // cl (w, cl)
+selectCodeEditor("top.v", 160, 226, false, false, false, false, true); // cl (w, cl) - Double Click
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1208 ms. Increasing delay to 3000 ms.
+// Elapsed time: 840 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 9, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 9, false, false, false, false, false, true); // B (F, cl) - Double Click
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 536 ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 884 MB. GUI used memory: 54 MB. Current time: 11/17/22, 3:55:20 PM EST
+// Elapsed time: 281 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xadc_wiz_0.v", 2); // k (j, cl)
+selectCodeEditor("xadc_wiz_0.v", 105, 264); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 105, 264, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 116, 255); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 116, 255, false, false, false, false, true); // D (w, cl) - Double Click
+// Elapsed time: 53 seconds
+selectCodeEditor("xadc_wiz_0.v", 353, 272); // D (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+selectCodeEditor("top.v", 239, 181); // cl (w, cl)
+selectCodeEditor("top.v", 239, 181, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 169, 96); // cl (w, cl)
+selectCodeEditor("top.v", 169, 96, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 237, 94); // cl (w, cl)
+selectCodeEditor("top.v", 237, 94, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 234, 383); // cl (w, cl)
+selectCodeEditor("top.v", 234, 383, false, false, false, false, true); // cl (w, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xadc_wiz_0.v", 2); // k (j, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("xadc_wiz_0.v", 178, 234); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 178, 234, false, false, false, false, true); // D (w, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xadc_wiz_0.v", 2); // k (j, cl)
+selectCodeEditor("xadc_wiz_0.v", 163, 110); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 163, 110, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 182, 387); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 182, 387, false, false, false, false, true); // D (w, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+// Elapsed time: 57 seconds
+selectCodeEditor("top.v", 231, 421); // cl (w, cl)
+selectCodeEditor("top.v", 231, 421, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 172 seconds
+selectCodeEditor("top.v", 146, 195); // cl (w, cl)
+selectCodeEditor("top.v", 76, 282); // cl (w, cl)
+selectCodeEditor("top.v", 76, 282, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("top.v", 208, 247); // cl (w, cl)
+selectCodeEditor("top.v", 208, 247, false, false, false, false, true); // cl (w, cl) - Double Click
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1716 ms. Increasing delay to 4000 ms.
+// Elapsed time: 762 seconds
+selectCodeEditor("top.v", 118, 216); // cl (w, cl)
+selectCodeEditor("top.v", 118, 216, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 99, 198); // cl (w, cl)
+selectCodeEditor("top.v", 99, 198, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 118, 214); // cl (w, cl)
+selectCodeEditor("top.v", 118, 214, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 265, 215); // cl (w, cl)
+selectCodeEditor("top.v", 265, 215, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 28, 211); // cl (w, cl)
+selectCodeEditor("top.v", 28, 211, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 66, 209); // cl (w, cl)
+selectCodeEditor("top.v", 67, 210, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 269, 214); // cl (w, cl)
+selectCodeEditor("top.v", 269, 214, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 217, 352); // cl (w, cl)
+selectCodeEditor("top.v", 217, 352, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 266, 61); // cl (w, cl)
+selectCodeEditor("top.v", 266, 61, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 220, 162); // cl (w, cl)
+selectCodeEditor("top.v", 220, 162, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 230, 177); // cl (w, cl)
+selectCodeEditor("top.v", 230, 177, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 223, 159); // cl (w, cl)
+selectCodeEditor("top.v", 223, 159, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 233, 191); // cl (w, cl)
+selectCodeEditor("top.v", 233, 191, false, false, false, false, true); // cl (w, cl) - Double Click
+// [GUI Memory]: 128 MB (+9064kb) [01:22:31]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xadc_wiz_0.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+selectCodeEditor("top.v", 214, 354); // cl (w, cl)
+selectCodeEditor("top.v", 214, 354, false, false, false, false, true); // cl (w, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xadc_wiz_0.v", 2); // k (j, cl)
+selectCodeEditor("xadc_wiz_0.v", 216, 352); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 216, 352, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 155, 351); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 203, 121); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 203, 121, false, false, false, false, true); // D (w, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+selectCodeEditor("top.v", 266, 64); // cl (w, cl)
+selectCodeEditor("top.v", 266, 64, false, false, false, false, true); // cl (w, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "xadc_wiz_0.v", 2); // k (j, cl)
+selectCodeEditor("xadc_wiz_0.v", 214, 129); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 214, 129, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 168, 231); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 168, 231, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 168, 228); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 168, 228, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 159, 231); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 159, 231, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 166, 125); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 166, 125, false, false, false, false, true); // D (w, cl) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 884 MB. GUI used memory: 62 MB. Current time: 11/17/22, 4:25:20 PM EST
+// Elapsed time: 550 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 2, true); // B (F, cl) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 2); // B (F, cl)
+selectButton(PAResourceQtoS.SrcFilePropPanels_MORE_INFO, "more info"); // h (cS, cl)
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 2); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci), xadc_wiz_0 (xadc_wiz_0.v)]", 3, false); // B (F, cl)
+selectCodeEditor("xadc_wiz_0.v", 16, 193); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 16, 193, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 14, 196); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 14, 196, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 94, 215); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 88, 387); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 88, 387, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 96, 403); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 97, 403, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 99, 234); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 99, 234, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 240, 196); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 239, 210); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 153, 282); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 127, 94); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 127, 94, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 111, 285); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 111, 285, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 99, 281); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 99, 281, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 103, 281); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 103, 281, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 82, 65); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 85, 100); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 96, 190); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 96, 148); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 16, 46); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 16, 46, false, false, false, false, true); // D (w, cl) - Double Click
+selectCodeEditor("xadc_wiz_0.v", 15, 44); // D (w, cl)
+selectCodeEditor("xadc_wiz_0.v", 15, 44, false, false, false, false, true); // D (w, cl) - Double Click
+// Elapsed time: 196 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+selectCodeEditor("top.v", 83, 199); // cl (w, cl)
+selectCodeEditor("top.v", 83, 199, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 84, 213); // cl (w, cl)
+selectCodeEditor("top.v", 84, 213, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 91, 230); // cl (w, cl)
+selectCodeEditor("top.v", 91, 230, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 94, 247); // cl (w, cl)
+selectCodeEditor("top.v", 93, 247, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 92, 266); // cl (w, cl)
+selectCodeEditor("top.v", 92, 266, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 83, 198); // cl (w, cl)
+selectCodeEditor("top.v", 83, 198, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 80, 199); // cl (w, cl)
+selectCodeEditor("top.v", 80, 199, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 62, 164); // cl (w, cl)
+selectCodeEditor("top.v", 62, 164, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 206, 347); // cl (w, cl)
+selectCodeEditor("top.v", 206, 347, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 217, 348); // cl (w, cl)
+selectCodeEditor("top.v", 217, 348, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 211, 159); // cl (w, cl)
+selectCodeEditor("top.v", 218, 348); // cl (w, cl)
+selectCodeEditor("top.v", 218, 348, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 99 seconds
+selectCodeEditor("top.v", 437, 84); // cl (w, cl)

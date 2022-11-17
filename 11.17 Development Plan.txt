@@ -1,0 +1,2 @@
+Plan:
+Only use 1 FSR button to indicate when to step and a switch to indicate the direction

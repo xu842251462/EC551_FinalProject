@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='X:/EC551/FinalProject/Working Copy/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.runs/impl_1'
+HD_PWD='X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/Analog_Pong_Game/Analog_Pong_Game.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log top_new.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_new.tcl -notrace
 
 

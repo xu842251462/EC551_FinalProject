@@ -24,8 +24,7 @@ module analog2game(
     input wire CLK100MHZ,
     input wire [15:0]vauxp3,
     input wire [15:0]vauxp2,
-    output reg [1:0]BTN_LR,
-    output reg [1:0]LED
+    output reg [1:0]BTN_LR
     );
     
     reg [15:0]dataL;
@@ -42,15 +41,15 @@ module analog2game(
          begin
              if (dataL>2000 & dataR>2000) begin
                 BTN_LR = 2'b00;
-                LED = 2'b11;
+      //          LED = 2'b11;
                 end
              else if (dataL>1000) begin
                 BTN_LR = 2'b01;
-                LED = 2'b01;
+    //            LED = 2'b01;
                 end
               else if (dataR>1000) begin
                 BTN_LR = 2'b10;
-                LED = 2'b10;
+    //            LED = 2'b10;
                 end
      end
      
