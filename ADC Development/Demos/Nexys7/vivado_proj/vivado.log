@@ -2,32 +2,63 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Nov 17 14:54:48 2022
-# Process ID: 9712
-# Current directory: X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21100 X:\EC551\FinalProject\working copy 11.17\EC551_FinalProject\ADC Development\Demos\Nexys7\vivado_proj\Nexys-A7-100T-XADC.xpr
-# Log file: X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/vivado.log
-# Journal file: X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj\vivado.jou
+# Start of session at: Wed Nov 23 09:45:33 2022
+# Process ID: 27088
+# Current directory: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2444 X:\EC551\FinalProject\Working Copy 11.23\EC551_FinalProject\ADC Development\Demos\Nexys7\vivado_proj\Nexys-A7-100T-XADC.xpr
+# Log file: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/vivado.log
+# Journal file: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr}
+open_project {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr}
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj'
+Current project path is 'X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj'
 INFO: [Project 1-313] Project file moved from 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj' since last save.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/repo', nor could it be found using path 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/repo'.
-WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.ip_user_files', nor could it be found using path 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.ip_user_files'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/repo', nor could it be found using path 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/repo'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.ip_user_files', nor could it be found using path 'X:/EC551/FinalProject/Working Copy/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.ip_user_files'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'x:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/repo'; Can't find the specified path.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'x:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/repo'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.dcp'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_stub.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_stub.vhdl'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_sim_netlist.v'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'xadc_wiz_0' generated file not found 'x:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_sim_netlist.vhdl'. Please regenerate to continue.
 WARNING: [IP_Flow 19-2162] IP 'xadc_wiz_0' is locked:
 * IP definition 'XADC Wizard (3.3)' for IP 'xadc_wiz_0' (customized with software release 2018.2) has a different revision in the IP Catalog.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 834.680 ; gain = 195.082
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 804.512 ; gain = 157.344
 update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run xadc_wiz_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-576] IP 'X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.xci' in run xadc_wiz_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.xci
+
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+WARNING: [Project 1-576] IP 'X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.xci' in run xadc_wiz_0_synth_1 is locked, no out-of-context (OOC) run will be launched. The run may not be able to complete.
+Please select 'Report IP Status' from 'Tools/Report' or run the Tcl command 'report_ip_status' for more information.
+INFO: [Common 17-344] 'launch_runs' was cancelled
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF909A
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 23 09:52:04 2022...

@@ -23,27 +23,28 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/proj/Nexys-A7-100T-XADC.cache/wt [current_project]
-set_property parent.project_path D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/proj/Nexys-A7-100T-XADC.xpr [current_project]
+set_property webtalk.parent_dir {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.cache/wt} [current_project]
+set_property parent.project_path {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths D:/Github/vivado-boards/new/board_files [current_project]
+set_property board_part_repo_paths {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.board} [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.0 [current_project]
-set_property ip_repo_paths d:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/repo [current_project]
-set_property ip_output_repo d:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/repo/cache [current_project]
+set_property ip_repo_paths {{x:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/repo}} [current_project]
+update_ip_catalog
+set_property ip_output_repo {x:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/src/hdl/DigitToSeg.v
-  D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/src/hdl/counter3bit.v
-  D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/src/hdl/decoder3_8.v
-  D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/src/hdl/mux4_4bus.v
-  D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/src/hdl/segClkDevider.v
-  D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/src/hdl/sevensegdecoder.v
-  D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/src/hdl/top.v
+  {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/DigitToSeg.v}
+  {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/counter3bit.v}
+  {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/decoder3_8.v}
+  {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/mux4_4bus.v}
+  {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/segClkDevider.v}
+  {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/sevensegdecoder.v}
+  {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/sources_1/imports/hdl/top.v}
 }
-read_ip -quiet D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.xci
-set_property used_in_implementation false [get_files -all d:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/src/ip/xadc_wiz_0/xadc_wiz_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/src/ip/xadc_wiz_0/xadc_wiz_0.xdc]
+read_ip -quiet {{X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.xci}}
+set_property used_in_implementation false [get_files -all {{x:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0_ooc.xdc}}]
+set_property used_in_implementation false [get_files -all {{x:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/xadc_wiz_0/ip/xadc_wiz_0/xadc_wiz_0.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -53,10 +54,10 @@ set_property used_in_implementation false [get_files -all d:/Github/prerelease/N
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/src/constraints/Nexys-A7-100T-Master.xdc
-set_property used_in_implementation false [get_files D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/src/constraints/Nexys-A7-100T-Master.xdc]
+read_xdc {{X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}}
+set_property used_in_implementation false [get_files {{X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}}]
 
-set_param ips.enableIPCacheLiteLoad 0
+set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 synth_design -top XADCdemo -part xc7a100tcsg324-1 -flatten_hierarchy none -directive RuntimeOptimized -fsm_extraction off

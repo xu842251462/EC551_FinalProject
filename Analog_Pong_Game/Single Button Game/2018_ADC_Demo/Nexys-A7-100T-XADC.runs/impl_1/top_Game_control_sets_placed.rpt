@@ -1,0 +1,128 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Nov 23 11:41:08 2022
+| Host         : ECE-PHO115-02 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_Game_control_sets_placed.rpt
+| Design       : top_Game
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    50 |
+|    Minimum number of control sets                        |    50 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   196 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    50 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |    14 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     6 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    25 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             155 |           77 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             285 |           75 |
+| Yes          | No                    | No                     |              77 |           27 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             287 |           85 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+----------------------------------------------------+------------------------------------------------+------------------+----------------+
+|            Clock Signal           |                    Enable Signal                   |                Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-----------------------------------+----------------------------------------------------+------------------------------------------------+------------------+----------------+
+|  top_Pong/pong/pix_stb            |                                                    |                                                |                1 |              1 |
+|  top_ADC/segment1/XLXI_47/clk_div |                                                    |                                                |                1 |              3 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b1/incx[3]_i_1_n_0                   | top_Pong/pong/b1/x                             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b5/incx115_out                       | top_Pong/pong/b5/x                             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b5/incx[3]_i_1_n_0                   | top_Pong/pong/b5/x                             |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b6/incx[3]_i_1_n_0                   | top_Pong/pong/b6/x                             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b6/incx115_out                       | top_Pong/pong/b6/x                             |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b4/incx115_out                       | top_Pong/pong/b4/x                             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b4/incx[3]_i_1_n_0                   | top_Pong/pong/b4/x                             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b1/incx115_out                       | top_Pong/pong/b1/x                             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b0/incx115_out                       | top_Pong/pong/b0/incy[3]_i_1_n_0               |                2 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b0/incx[3]_i_2_n_0                   | top_Pong/pong/b0/incx[3]_i_1_n_0               |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b2/incx[3]_i_1_n_0                   | top_Pong/pong/b2/x                             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b2/incx115_out                       | top_Pong/pong/b2/x                             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b3/incx[3]_i_1_n_0                   | top_Pong/pong/b3/x                             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b3/incx115_out                       | top_Pong/pong/b3/x                             |                1 |              4 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b0/detecty/o_onup                    | top_Pong/pong/b0/s                             |                4 |              9 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/end_screen/pix_stb                        | top_Pong/end_screen/display/h_count            |                4 |             10 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/end_screen/display/v_count[9]_i_1_n_0     |                                                |                3 |             10 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/nolabel_line60/display/v_count[9]_i_1_n_0 |                                                |                4 |             10 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/nolabel_line60/pix_stb                    | top_Pong/nolabel_line60/display/h_count        |                3 |             10 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/display/v_count[9]_i_1_n_0           |                                                |                5 |             10 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/pix_stb                              | top_Pong/pong/display/h_count                  |                4 |             10 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/p/x[1]_i_1_n_0                       |                                                |                5 |             12 |
+|  CLK100MHZ_IBUF_BUFG              | top_ADC/decimal_reg_in[11]_i_1_n_0                 |                                                |                4 |             13 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b1/detecty/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b6/detecty/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b6/detectx/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b5/detecty/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b5/detectx/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b1/detectx/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b2/detecty/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b0/detecty/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b0/detectx/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b2/detectx/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b3/detecty/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b3/detectx/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b4/detectx/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/pong/b4/detecty/counter[0]_i_1_n_0    |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    | top_Pong/change_mode/d_btn0/counter[0]_i_1_n_0 |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/nolabel_line60/ball/x0                    |                                                |                6 |             22 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b2/x0                                | top_Pong/pong/b2/x                             |                6 |             24 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b6/x0                                | top_Pong/pong/b6/x                             |                6 |             24 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b0/x0                                | top_Pong/pong/b0/x[1]_i_1_n_0                  |                6 |             24 |
+|  CLK100MHZ_IBUF_BUFG              | top_ADC/decimal_reg_in[11]_i_1_n_0                 | top_ADC/dig0                                   |               11 |             24 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b4/x0                                | top_Pong/pong/b4/x                             |                6 |             24 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b5/x0                                | top_Pong/pong/b5/x                             |                6 |             24 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b1/x0                                | top_Pong/pong/b1/x                             |                6 |             24 |
+|  CLK100MHZ_IBUF_BUFG              | top_Pong/pong/b3/x0                                | top_Pong/pong/b3/x                             |                6 |             24 |
+|  CLK100MHZ_IBUF_BUFG              |                                                    |                                                |               75 |            151 |
++-----------------------------------+----------------------------------------------------+------------------------------------------------+------------------+----------------+
+
+

@@ -2,13 +2,21 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Thu Nov 17 14:54:48 2022
-# Process ID: 9712
-# Current directory: X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21100 X:\EC551\FinalProject\working copy 11.17\EC551_FinalProject\ADC Development\Demos\Nexys7\vivado_proj\Nexys-A7-100T-XADC.xpr
-# Log file: X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/vivado.log
-# Journal file: X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj\vivado.jou
+# Start of session at: Wed Nov 23 09:45:33 2022
+# Process ID: 27088
+# Current directory: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2444 X:\EC551\FinalProject\Working Copy 11.23\EC551_FinalProject\ADC Development\Demos\Nexys7\vivado_proj\Nexys-A7-100T-XADC.xpr
+# Log file: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/vivado.log
+# Journal file: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {X:/EC551/FinalProject/working copy 11.17/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr}
+open_project {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.xpr}
 update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run xadc_wiz_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]

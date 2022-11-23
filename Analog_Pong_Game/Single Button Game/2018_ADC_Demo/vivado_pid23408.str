@@ -1,0 +1,1150 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 23408
+License: Customer
+
+Current time: 	Wed Nov 23 10:47:56 EST 2022
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 216 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	cnaught1
+User home directory: C:/Users/cnaught1
+User working directory: X:/EC551/Demos_Clean/2018_ADC_Demo
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	X:/EC551/Demos_Clean/2018_ADC_Demo/vivado.log
+Vivado journal file location: 	X:/EC551/Demos_Clean/2018_ADC_Demo/vivado.jou
+Engine tmp dir: 	X:/EC551/Demos_Clean/2018_ADC_Demo/.Xil/Vivado-23408-ECE-PHO115-02
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@XilinxLM.bu.edu
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 645 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 117 MB (+120609kb) [00:00:06]
+// [Engine Memory]: 637 MB (+516053kb) [00:00:06]
+// aL (cl): Older Project Version: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 645 MB. GUI used memory: 48 MB. Current time: 11/23/22, 10:47:58 AM EST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// Opening Vivado Project: X:\EC551\Demos_Clean\2018_ADC_Demo\Nexys-A7-100T-XADC.xpr. Version: Vivado v2018.2 
+// by (cl):  Open Project : addNotify
+dismissDialog("Older Project Version"); // aL (cl)
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_NEW
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 751 MB (+87056kb) [00:00:25]
+// [Engine Memory]: 792 MB (+3164kb) [00:00:27]
+// WARNING: HEventQueue.dispatchEvent() is taking  3477 ms.
+// Tcl Message: open_project X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/proj/temp/PrjAr/_X_' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 795 MB. GUI used memory: 55 MB. Current time: 11/23/22, 10:48:15 AM EST
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 827.344 ; gain = 142.266 
+// [Engine Memory]: 852 MB (+21474kb) [00:00:29]
+// Project name: Nexys-A7-100T-XADC; location: X:/EC551/Demos_Clean/2018_ADC_Demo; part: xc7a100tcsg324-1
+// Elapsed time: 10 seconds
+dismissDialog("Open Project"); // by (cl)
+// al (cl): Project Upgraded: addNotify
+// Elapsed time: 16 seconds
+selectButton(PAResourceQtoS.ReportIPStatusInfoDialog_REPORT_IP_STATUS, "Report IP Status"); // a (al)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+dismissDialog("Project Upgraded"); // al (cl)
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// by (cl):  Report IP Status : addNotify
+dismissDialog("Report IP Status"); // by (cl)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v)]", 1); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cl): Out-of-Context module run(s) is/are Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Out-of-Context module run(s) is/are Out-of-date"); // A (cl)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run xadc_wiz_0_synth_1 
+// TclEventType: RUN_RESET
+// WARNING: HTimer (StateMonitor Timer) is taking 782ms to process. Increasing delay to 4000 ms.
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Starting Design Runs : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed Nov 23 10:49:04 2022] Launched xadc_wiz_0_synth_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/xadc_wiz_0_synth_1/runme.log [Wed Nov 23 10:49:04 2022] Launched synth_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 16 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 31 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK (aH, cl)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK (aH, cl)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK (aH, cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Completed: addNotify
+// Elapsed time: 107 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// by (cl):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 23 10:51:25 2022] Launched impl_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Completed: addNotify
+// Elapsed time: 157 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Implementation Completed"); // ah (cl)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 12 seconds
+setFileChooser("X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/new/top_Game.v");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 17 seconds
+dismissDialog("Add Sources"); // c (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse -scan_for_includes {{X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/new/top_Game.v}} 
+// c (cl): Add Sources: addNotify
+// by (c):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {{X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/new/top_Game.v}} 
+dismissDialog("Add Sources"); // by (c)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+setFileChooser("X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/EC551_FinalProject/analog2game.v");
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 19 seconds
+dismissFileChooser();
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 34 seconds
+dismissDialog("Add Sources"); // c (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// c (cl): Add Sources: addNotify
+// by (c):  Add Sources  : addNotify
+// Tcl Message: add_files -norecurse -scan_for_includes {{X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/EC551_FinalProject/analog2game.v}} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -norecurse {{X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/EC551_FinalProject/analog2game.v}} 
+dismissDialog("Add Sources"); // by (c)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v)]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v), segment1 : DigitToSeg (DigitToSeg.v)]", 3); // B (F, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 126 MB (+3240kb) [00:07:29]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// Elapsed time: 109 seconds
+String[] filenames31467 = {"X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/UART_TX_CTRL.vhd", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/bg_gen.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/clock_divider.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/debounce.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/dec_bcd.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/game.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/increment_one.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/menu_screen.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/num_hex.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/paddle.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/score_to_7seg.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/square.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/sram.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/start_square.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/topmodule.v", "X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/vga640x480.v"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 112 seconds
+dismissDialog("Add Sources"); // c (cl)
+// c (cl): Add Sources: addNotify
+// bV (c): Import Source Conflicts: addNotify
+selectRadioButton(PAResourceQtoS.SrcConflictDialog_DONT_OVERWRITE_EXISTING_FILES, "Don't overwrite existing files"); // a (Q, bV)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bV)
+dismissDialog("Import Source Conflicts"); // bV (c)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// by (c):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // by (c)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART_TX_CTRL(Behavioral) (UART_TX_CTRL.vhd)]", 10, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART_TX_CTRL(Behavioral) (UART_TX_CTRL.vhd)]", 11, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART_TX_CTRL(Behavioral) (UART_TX_CTRL.vhd)]", 10, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART_TX_CTRL(Behavioral) (UART_TX_CTRL.vhd)]", 11, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART_TX_CTRL(Behavioral) (UART_TX_CTRL.vhd)]", 11, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// Tcl Message: export_ip_user_files -of_objects  [get_files {{X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/UART_TX_CTRL.vhd}}] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/sources_1/imports/hdl/UART_TX_CTRL.vhd}} 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v)]", 9, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v)]", 11, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// [GUI Memory]: 134 MB (+971kb) [00:10:04]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, XADCdemo (top.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("top.v", 102, 267); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v)]", 2); // B (F, cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Elapsed time: 12 seconds
+selectCodeEditor("top.v", 173, 295); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_Game.v", 0); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+// [GUI Memory]: 159 MB (+19935kb) [00:10:55]
+// Elapsed time: 14 seconds
+selectCodeEditor("top.v", 288, 444); // cl (w, cl)
+selectCodeEditor("top.v", 162, 384); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+selectCodeEditor("top.v", 81, 401); // cl (w, cl)
+selectCodeEditor("top.v", 81, 401, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+selectCodeEditor("top.v", 63, 127); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+selectCodeEditor("top.v", 63, 148); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+selectCodeEditor("top.v", 63, 163); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+selectCodeEditor("top.v", 63, 178); // cl (w, cl)
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+selectCodeEditor("top.v", 161, 204); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 29 seconds
+selectCodeEditor("top.v", 301, 193); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_Game.v", 0); // k (j, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 9); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Nexys-A7-100T-Master.xdc]", 11, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 2, 247, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 530, 91); // cl (w, cl)
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 344, 89); // cl (w, cl)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+// Elapsed time: 11 seconds
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a (E, c)
+// Elapsed time: 36 seconds
+setFileChooser("X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc");
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 52 seconds
+dismissDialog("Add Sources"); // c (cl)
+// c (cl): Add Sources: addNotify
+// bV (c): Import Source Conflicts: addNotify
+selectButton(PAResourceQtoS.SrcConflictDialog_YES, "Yes"); // a (bV)
+dismissDialog("Import Source Conflicts"); // bV (c)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse {{X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}} 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset constrs_1 -force {{X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Single_Button_Analog_Pong_Game/Single_Button_Project/Single_Button_Project.srcs/constrs_1/imports/constraints/Nexys-A7-100T-Master.xdc}} 
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 376, 236); // cl (w, cl)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cS, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("Nexys-A7-100T-Master.xdc", 321, 212); // cl (w, cl)
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 23 11:02:02 2022] Launched synth_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 10); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 9); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v)]", 2); // B (F, cl)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Failed: addNotify
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v)]", 2); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v)]", 4); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v), XLXI_49 : counter3bit (counter3bit.v)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v), XLXI_49 : counter3bit (counter3bit.v)]", 8, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("counter3bit.v", 67, 25); // cl (w, cl)
+typeControlKey((HResource) null, "counter3bit.v", 'c'); // cl (w, cl)
+selectCodeEditor("counter3bit.v", 66, 44); // cl (w, cl)
+selectCodeEditor("counter3bit.v", 71, 40); // cl (w, cl)
+typeControlKey((HResource) null, "counter3bit.v", 'v'); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v), XLXI_50 : decoder_3_8 (decoder3_8.v)]", 9, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v), XLXI_50 : decoder_3_8 (decoder3_8.v)]", 9, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("decoder3_8.v", 71, 364); // cl (w, cl)
+typeControlKey((HResource) null, "decoder3_8.v", 'v'); // cl (w, cl)
+selectCodeEditor("decoder3_8.v", 77, 382); // cl (w, cl)
+typeControlKey((HResource) null, "decoder3_8.v", 'v'); // cl (w, cl)
+selectCodeEditor("decoder3_8.v", 76, 399); // cl (w, cl)
+typeControlKey((HResource) null, "decoder3_8.v", 'v'); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v), XLXI_6 : sevensegdecoder (sevensegdecoder.v)]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v), XLXI_6 : sevensegdecoder (sevensegdecoder.v)]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("sevensegdecoder.v", 71, 182); // cl (w, cl)
+typeControlKey((HResource) null, "sevensegdecoder.v", 'v'); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v), XLXI_45 : mux4_4bus (mux4_4bus.v)]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v), XLXI_45 : mux4_4bus (mux4_4bus.v)]", 6, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("mux4_4bus.v", 70, 213); // cl (w, cl)
+typeControlKey((HResource) null, "mux4_4bus.v", 'v'); // cl (w, cl)
+selectCodeEditor("mux4_4bus.v", 71, 230); // cl (w, cl)
+typeControlKey((HResource) null, "mux4_4bus.v", 'v'); // cl (w, cl)
+selectCodeEditor("mux4_4bus.v", 70, 245); // cl (w, cl)
+typeControlKey((HResource) null, "mux4_4bus.v", 'v'); // cl (w, cl)
+selectCodeEditor("mux4_4bus.v", 71, 260); // cl (w, cl)
+typeControlKey((HResource) null, "mux4_4bus.v", 'v'); // cl (w, cl)
+selectCodeEditor("mux4_4bus.v", 71, 295); // cl (w, cl)
+typeControlKey((HResource) null, "mux4_4bus.v", 'v'); // cl (w, cl)
+selectCodeEditor("mux4_4bus.v", 72, 314); // cl (w, cl)
+typeControlKey((HResource) null, "mux4_4bus.v", 'v'); // cl (w, cl)
+selectCodeEditor("mux4_4bus.v", 73, 333); // cl (w, cl)
+typeControlKey((HResource) null, "mux4_4bus.v", 'v'); // cl (w, cl)
+selectCodeEditor("mux4_4bus.v", 70, 344); // cl (w, cl)
+typeControlKey((HResource) null, "mux4_4bus.v", 'v'); // cl (w, cl)
+selectCodeEditor("mux4_4bus.v", 76, 385); // cl (w, cl)
+typeControlKey((HResource) null, "mux4_4bus.v", 'v'); // cl (w, cl)
+selectCodeEditor("mux4_4bus.v", 77, 406); // cl (w, cl)
+typeControlKey((HResource) null, "mux4_4bus.v", 'v'); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v), XLXI_47 : segClkDevider (segClkDevider.v)]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v), XLXI_47 : segClkDevider (segClkDevider.v)]", 7, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("segClkDevider.v", 41, 163); // cl (w, cl)
+typeControlKey((HResource) null, "segClkDevider.v", 'v'); // cl (w, cl)
+selectCodeEditor("segClkDevider.v", 67, 176); // cl (w, cl)
+typeControlKey((HResource) null, "segClkDevider.v", 'v'); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v), XLXI_49 : counter3bit (counter3bit.v)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v), XLXI_49 : counter3bit (counter3bit.v)]", 8, false, false, false, false, false, true); // B (F, cl) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "decoder3_8.v", 3); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sevensegdecoder.v", 4); // k (j, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux4_4bus.v", 5); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "segClkDevider.v", 6); // k (j, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("segClkDevider.v", 430, 104); // cl (w, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), segment1 : DigitToSeg (DigitToSeg.v)]", 4); // B (F, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 23 11:03:27 2022] Launched synth_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Failed: addNotify
+// Elapsed time: 29 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v)]", 2); // B (F, cl)
+selectCodeEditor("top.v", 147, 301); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("top.v", 79, 252); // cl (w, cl)
+selectCodeEditor("top.v", 79, 252, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+selectCodeEditor("top.v", 83, 281); // cl (w, cl)
+selectCodeEditor("top.v", 83, 281, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 81, 301); // cl (w, cl)
+selectCodeEditor("top.v", 81, 301, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+selectCodeEditor("top.v", 79, 316); // cl (w, cl)
+selectCodeEditor("top.v", 79, 316, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+selectCodeEditor("top.v", 78, 329); // cl (w, cl)
+selectCodeEditor("top.v", 78, 329, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 23 11:04:42 2022] Launched synth_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Failed: addNotify
+// Elapsed time: 31 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_Game.v", 0); // k (j, cl)
+selectCodeEditor("top_Game.v", 85, 232); // cl (w, cl)
+selectCodeEditor("top_Game.v", 85, 232, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_Game.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 91, 283); // cl (w, cl)
+selectCodeEditor("top_Game.v", 91, 283, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_Game.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 23 11:05:36 2022] Launched synth_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Failed: addNotify
+// Elapsed time: 30 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cl)
+selectCodeEditor("top_Game.v", 94, 295); // cl (w, cl)
+selectCodeEditor("top_Game.v", 94, 295, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_Game.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 88, 320); // cl (w, cl)
+selectCodeEditor("top_Game.v", 88, 319, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_Game.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 90, 333); // cl (w, cl)
+selectCodeEditor("top_Game.v", 90, 333, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_Game.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 87, 351); // cl (w, cl)
+selectCodeEditor("top_Game.v", 86, 349); // cl (w, cl)
+selectCodeEditor("top_Game.v", 86, 349, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_Game.v", 86, 349); // cl (w, cl)
+selectCodeEditor("top_Game.v", 88, 348); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectCodeEditor("top_Game.v", 190, 203); // cl (w, cl)
+selectCodeEditor("top_Game.v", 190, 203, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_Game.v", 275, 196); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top_Game.v", 168, 211); // cl (w, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 23 11:06:41 2022] Launched synth_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Completed: addNotify
+// Elapsed time: 112 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// by (cl):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs impl_1 -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 23 11:08:35 2022] Launched impl_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Completed: addNotify
+// Elapsed time: 132 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ah (cl)
+// TclEventType: RUN_LAUNCH
+// by (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 23 11:10:50 2022] Launched impl_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 97 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  4246 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF909A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,990 MB. GUI used memory: 88 MB. Current time: 11/23/22, 11:12:41 AM EST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/top_Game.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,002 MB (+1160434kb) [00:24:54]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/top_Game.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 112 seconds
+selectCodeEditor("top_Game.v", 218, 417); // cl (w, cl)
+selectCodeEditor("top_Game.v", 218, 417, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 47 seconds
+selectCodeEditor("top_Game.v", 190, 21); // cl (w, cl)
+selectCodeEditor("top_Game.v", 190, 21, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("top_Game.v", 77, 128); // cl (w, cl)
+typeControlKey((HResource) null, "top_Game.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 155, 431); // cl (w, cl)
+typeControlKey((HResource) null, "top_Game.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 103, 365); // cl (w, cl)
+// Elapsed time: 26 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sevensegdecoder.v", 2, false, true); // k (j, cl) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (aH, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "segClkDevider.v", 2); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // az
+unMinimizeFrame(PAResourceOtoP.PAViews_HARDWARE, "Hardware"); // az
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// by (cl):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,036 MB. GUI used memory: 79 MB. Current time: 11/23/22, 11:16:34 AM EST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), ag : analog2game (analog2game.v)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), ag : analog2game (analog2game.v)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_Game.v", 0); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+// Elapsed time: 10 seconds
+selectCodeEditor("top.v", 121, 405); // cl (w, cl)
+selectCodeEditor("top.v", 121, 405, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top.v", 121, 405); // cl (w, cl)
+selectCodeEditor("top.v", 126, 400); // cl (w, cl)
+selectCodeEditor("top.v", 126, 400, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_Game.v", 0); // k (j, cl)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "analog2game.v", 2); // k (j, cl)
+selectCodeEditor("analog2game.v", 288, 314); // cl (w, cl)
+selectCodeEditor("analog2game.v", 176, 396); // cl (w, cl)
+selectCodeEditor("analog2game.v", 124, 404); // cl (w, cl)
+selectCodeEditor("analog2game.v", 108, 419); // cl (w, cl)
+selectCodeEditor("analog2game.v", 136, 407); // cl (w, cl)
+selectCodeEditor("analog2game.v", 166, 387); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("analog2game.v", 241, 298); // cl (w, cl)
+// Elapsed time: 25 seconds
+selectCodeEditor("analog2game.v", 108, 432); // cl (w, cl)
+selectCodeEditor("analog2game.v", 96, 416); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "analog2game.v", 2); // k (j, cl)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "analog2game.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "analog2game.v", 'v'); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("analog2game.v", 196, 164); // cl (w, cl)
+selectCodeEditor("analog2game.v", 187, 176); // cl (w, cl)
+// Elapsed time: 35 seconds
+selectCodeEditor("analog2game.v", 220, 421); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_Game.v", 0); // k (j, cl)
+selectCodeEditor("top_Game.v", 87, 413); // cl (w, cl)
+typeControlKey((HResource) null, "top_Game.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 55, 417); // cl (w, cl)
+selectCodeEditor("top_Game.v", 98, 398); // cl (w, cl)
+typeControlKey((HResource) null, "top_Game.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "top_Game.v", 'v'); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("top_Game.v", 102, 398); // cl (w, cl)
+selectCodeEditor("top_Game.v", 104, 421); // cl (w, cl)
+selectCodeEditor("top_Game.v", 112, 400); // cl (w, cl)
+selectCodeEditor("top_Game.v", 187, 218); // cl (w, cl)
+selectCodeEditor("top_Game.v", 187, 218, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("top_Game.v", 246, 414); // cl (w, cl)
+typeControlKey((HResource) null, "top_Game.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 64, 434); // cl (w, cl)
+typeControlKey((HResource) null, "top_Game.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 141, 435); // cl (w, cl)
+selectCodeEditor("top_Game.v", 135, 331); // cl (w, cl)
+selectCodeEditor("top_Game.v", 135, 331, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_Game.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 195, 433); // cl (w, cl)
+selectCodeEditor("top_Game.v", 195, 433, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_Game.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 186, 456); // cl (w, cl)
+selectCodeEditor("top_Game.v", 186, 456, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top_Game.v", 'v'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 194, 435); // cl (w, cl)
+selectCodeEditor("top_Game.v", 234, 420); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "analog2game.v", 2); // k (j, cl)
+selectCodeEditor("analog2game.v", 177, 125); // cl (w, cl)
+selectCodeEditor("analog2game.v", 146, 354); // cl (w, cl)
+selectCodeEditor("analog2game.v", 122, 387); // cl (w, cl)
+selectCodeEditor("analog2game.v", 119, 346); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_Game.v", 0); // k (j, cl)
+selectCodeEditor("top_Game.v", 285, 219); // cl (w, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // by (cl)
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 23 11:21:17 2022] Launched synth_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/synth_1/runme.log [Wed Nov 23 11:21:17 2022] Launched impl_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 251 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF909A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/top_Game.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/top_Game.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 44 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "analog2game.v", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.v", 1); // k (j, cl)
+selectCodeEditor("top.v", 210, 77); // cl (w, cl)
+selectCodeEditor("top.v", 210, 77, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 58 seconds
+selectCodeEditor("top.v", 204, 234); // cl (w, cl)
+selectCodeEditor("top.v", 204, 234, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top.v", 'c'); // cl (w, cl)
+selectCodeEditor("top.v", 87, 311); // cl (w, cl)
+selectCodeEditor("top.v", 87, 311, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+selectCodeEditor("top.v", 101, 345); // cl (w, cl)
+selectCodeEditor("top.v", 101, 345, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+selectCodeEditor("top.v", 169, 263); // cl (w, cl)
+selectCodeEditor("top.v", 169, 263, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "top.v", 'v'); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("top.v", 302, 303); // cl (w, cl)
+// Elapsed time: 167 seconds
+selectCodeEditor("top.v", 186, 194); // cl (w, cl)
+selectCodeEditor("top.v", 186, 194, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("top.v", 219, 298); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // by (cl)
+// by (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 23 11:31:36 2022] Launched synth_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/synth_1/runme.log [Wed Nov 23 11:31:36 2022] Launched impl_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_Game.v", 0); // k (j, cl)
+selectCodeEditor("top_Game.v", 203, 399); // cl (w, cl)
+selectCodeEditor("top_Game.v", 203, 399, false, false, false, false, true); // cl (w, cl) - Double Click
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 241 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/top_Game.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 49 seconds
+selectCodeEditor("top_Game.v", 69, 298); // cl (w, cl)
+selectCodeEditor("top_Game.v", 129, 299); // cl (w, cl)
+selectCodeEditor("top_Game.v", 76, 301); // cl (w, cl)
+selectCodeEditor("top_Game.v", 144, 301); // cl (w, cl)
+selectCodeEditor("top_Game.v", 145, 145); // cl (w, cl)
+selectCodeEditor("top_Game.v", 145, 145, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("top_Game.v", 50, 333); // cl (w, cl)
+selectCodeEditor("top_Game.v", 50, 333, false, false, false, false, true); // cl (w, cl) - Double Click
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// by (cl):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // by (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v)]", 3, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v), clk600Hz : clock_divider (clock_divider.v)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("topmodule.v", 178, 228); // cl (w, cl)
+selectCodeEditor("topmodule.v", 178, 228, false, false, false, false, true); // cl (w, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "analog2game.v", 2); // k (j, cl)
+selectCodeEditor("analog2game.v", 222, 371); // cl (w, cl)
+selectCodeEditor("analog2game.v", 222, 371, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("analog2game.v", 98, 317); // cl (w, cl)
+selectCodeEditor("analog2game.v", 114, 455); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("analog2game.v", 279, 397); // cl (w, cl)
+typeControlKey((HResource) null, "analog2game.v", 'c'); // cl (w, cl)
+selectCodeEditor("analog2game.v", 94, 469); // cl (w, cl)
+typeControlKey((HResource) null, "analog2game.v", 'v'); // cl (w, cl)
+selectCodeEditor("analog2game.v", 66, 399); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // by (cl)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov 23 11:38:19 2022] Launched synth_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/synth_1/runme.log [Wed Nov 23 11:38:19 2022] Launched impl_1... Run output will be captured here: X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 66 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v)]", 3); // B (F, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_Game.v", 0); // k (j, cl)
+selectCodeEditor("top_Game.v", 55, 318); // cl (w, cl)
+// Elapsed time: 13 seconds
+selectCodeEditor("top_Game.v", 91, 315); // cl (w, cl)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 155 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // by (cl)
+// Elapsed time: 18 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF909A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/top_Game.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // by (cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/impl_1/top_Game.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // by (cl)
+// [GUI Memory]: 178 MB (+11036kb) [00:56:08]
+// Elapsed time: 55 seconds
+selectCodeEditor("top_Game.v", 372, 173); // cl (w, cl)

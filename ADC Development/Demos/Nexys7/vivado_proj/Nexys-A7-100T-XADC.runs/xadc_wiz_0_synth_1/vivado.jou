@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
-# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Nov  1 14:42:20 2018
-# Process ID: 13932
-# Current directory: D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/proj/Nexys-A7-100T-XADC.runs/xadc_wiz_0_synth_1
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Nov 23 09:48:29 2022
+# Process ID: 19984
+# Current directory: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.runs/xadc_wiz_0_synth_1
 # Command line: vivado.exe -log xadc_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source xadc_wiz_0.tcl
-# Log file: D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/proj/Nexys-A7-100T-XADC.runs/xadc_wiz_0_synth_1/xadc_wiz_0.vds
-# Journal file: D:/Github/prerelease/Nexys-A7/Nexys-A7-100T-XADC/proj/Nexys-A7-100T-XADC.runs/xadc_wiz_0_synth_1\vivado.jou
+# Log file: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.runs/xadc_wiz_0_synth_1/xadc_wiz_0.vds
+# Journal file: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/ADC Development/Demos/Nexys7/vivado_proj/Nexys-A7-100T-XADC.runs/xadc_wiz_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source xadc_wiz_0.tcl -notrace
