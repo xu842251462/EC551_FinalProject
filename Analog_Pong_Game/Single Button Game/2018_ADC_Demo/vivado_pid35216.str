@@ -1,0 +1,256 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 35216
+License: Customer
+
+Current time: 	Fri Dec 02 16:33:53 EST 2022
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 209 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	cnaught1
+User home directory: C:/Users/cnaught1
+User working directory: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/cnaught1/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo/vivado.log
+Vivado journal file location: 	X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo/vivado.jou
+Engine tmp dir: 	X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo/.Xil/Vivado-35216-ECE-PHO115-02
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@XilinxLM.bu.edu
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	384 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 742 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 98 MB (+100383kb) [00:00:06]
+// [Engine Memory]: 653 MB (+533527kb) [00:00:06]
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: X:\EC551\FinalProject\Working Copy 11.23\EC551_FinalProject\Analog_Pong_Game\Single Button Game\2018_ADC_Demo\Nexys-A7-100T-XADC.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo/Nexys-A7-100T-XADC.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 745 MB. GUI used memory: 47 MB. Current time: 12/2/22, 4:33:55 PM EST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 107 MB (+4498kb) [00:00:13]
+// [Engine Memory]: 745 MB (+61889kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  3133 ms.
+// Tcl Message: open_project {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo/Nexys-A7-100T-XADC.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 989.207 ; gain = 108.066 
+// Project name: Nexys-A7-100T-XADC; location: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // by (cl)
+// [Engine Memory]: 808 MB (+27409kb) [00:00:17]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run xadc_wiz_0_synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// by (cl):  Starting Design Runs : addNotify
+// Tcl Message: launch_runs synth_1 -jobs 6 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri Dec  2 16:34:10 2022] Launched xadc_wiz_0_synth_1... Run output will be captured here: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/xadc_wiz_0_synth_1/runme.log [Fri Dec  2 16:34:10 2022] Launched synth_1... Run output will be captured here: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 18 seconds
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK (aH, cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, xadc_wiz_0_synth_1, [Board 49-71] The board_part definition was not found for digilentinc.com:nexys-a7-100t:part0:1.0. The project's board_part property was not set, but the project's part property was set to xc7a100tcsg324-1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command. Check if board.repoPaths parameter is set and the board_part is installed from the tcl app store.. ]", 15, false); // ah (O, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 915 MB. GUI used memory: 62 MB. Current time: 12/2/22, 4:34:35 PM EST
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, xadc_wiz_0_synth_1, [Board 49-71] The board_part definition was not found for digilentinc.com:nexys-a7-100t:part0:1.0. The project's board_part property was not set, but the project's part property was set to xc7a100tcsg324-1. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command. Check if board.repoPaths parameter is set and the board_part is installed from the tcl app store.. ]", 15, false); // ah (O, cl)
+// Elapsed time: 20 seconds
+selectLabel(PAResourceOtoP.ProjectDashboardView_DASHBOARD, "Dashboard"); // b (E, cl)
+selectTab(PAResourceOtoP.ProjectDashboardView_TABBED_PANE, PAResourceOtoP.ProjectDashboardView_OVERVIEW, "Overview", 0); // w (v, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,279 MB. GUI used memory: 61 MB. Current time: 12/2/22, 4:35:15 PM EST
+// [Engine Memory]: 1,279 MB (+451281kb) [00:01:55]
+// Elapsed time: 34 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aK (aH, cl)
+// Tcl Command: 'rdi::info_commands {get*}'
+// Tcl Command: 'rdi::info_commands {get_*}'
+// Tcl Command: 'rdi::info_commands {get_board*}'
+// Tcl Command: 'rdi::info_commands {get_board_*}'
+// Tcl Command: 'rdi::info_commands {get_board_pa*}'
+// Tcl Command: 'rdi::info_commands {get_board_part*}'
+// Tcl Command: 'rdi::info_commands {get_board_parts*}'
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "get_board_parts", true); // aC (Z, cl)
+// Tcl Command: 'get_board_parts'
+// Tcl Command: 'get_board_parts'
+// Tcl Message: get_board_parts 
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v)]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v)]", 3); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v)]", 3); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v)]", 2); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 3); // B (F, cl)
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 119 MB (+6691kb) [00:02:29]
+// PAPropertyPanels.initPanels (xadc_wiz_0.xci) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 3, false); // B (F, cl)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_ADC : top_XADC (top.v), XLXI_7 : xadc_wiz_0 (xadc_wiz_0.xci)]", 3, true); // B (F, cl) - Node
+// Elapsed time: 79 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v)]", 6, true); // B (F, cl) - Node
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// [GUI Memory]: 125 MB (+100kb) [00:04:24]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v)]", 1, true); // B (F, cl) - Node
+// Elapsed time: 19 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v)]", 1); // B (F, cl)
+selectCodeEditor("top_Game.v", 312, 159); // cl (w, cl)
+selectCodeEditor("top_Game.v", 315, 154); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v)]", 6, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v), end_screen : bg_gen (bg_gen.v)]", 10, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// Elapsed time: 21 seconds
+selectCodeEditor("topmodule.v", 344, 368); // cl (w, cl)
+selectCodeEditor("topmodule.v", 462, 280); // cl (w, cl)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 284ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 308 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), ag : analog2game (analog2game.v)]", 14, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), ag : analog2game (analog2game.v)]", 14, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("analog2game.v", 29, 192); // cl (w, cl)
+typeControlKey((HResource) null, "analog2game.v", 'c'); // cl (w, cl)
+// Elapsed time: 38 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_Game.v", 1); // k (j, cl)
+selectCodeEditor("top_Game.v", 27, 317); // cl (w, cl)
+typeControlKey((HResource) null, "top_Game.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 30, 345); // cl (w, cl)
+typeControlKey((HResource) null, "top_Game.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 102, 348); // cl (w, cl)
+selectCodeEditor("top_Game.v", 9, 351); // cl (w, cl)
+typeControlKey((HResource) null, "top_Game.v", 'c'); // cl (w, cl)
+selectCodeEditor("top_Game.v", 173, 187); // cl (w, cl)
+selectCodeEditor("top_Game.v", 23, 434); // cl (w, cl)
+typeControlKey((HResource) null, "top_Game.v", 'c'); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "topmodule.v", 2); // k (j, cl)
+selectCodeEditor("topmodule.v", 27, 229); // cl (w, cl)
+typeControlKey((HResource) null, "topmodule.v", 'c'); // cl (w, cl)
+// Elapsed time: 28 seconds
+selectCodeEditor("topmodule.v", 382, 198); // cl (w, cl)
+typeControlKey((HResource) null, "topmodule.v", 'c'); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("topmodule.v", 546, 216); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("topmodule.v", 457, 274); // cl (w, cl)
+selectCodeEditor("topmodule.v", 586, 302); // cl (w, cl)
+selectCodeEditor("topmodule.v", 593, 152); // cl (w, cl)
+selectCodeEditor("topmodule.v", 521, 137); // cl (w, cl)
+selectCodeEditor("topmodule.v", 162, 279); // cl (w, cl)
+selectCodeEditor("topmodule.v", 300, 217); // cl (w, cl)
+selectCodeEditor("topmodule.v", 530, 180); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("topmodule.v", 331, 224); // cl (w, cl)
+selectCodeEditor("topmodule.v", 402, 96); // cl (w, cl)
+selectCodeEditor("topmodule.v", 527, 117); // cl (w, cl)
+selectCodeEditor("topmodule.v", 522, 90); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v), pong : game (game.v)]", 8, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v), pong : game (game.v), b5 : square (square.v)]", 16, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("game.v", 30, 249); // cl (w, cl)
+typeControlKey((HResource) null, "game.v", 'c'); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("game.v", 54, 317); // cl (w, cl)
+typeControlKey((HResource) null, "game.v", 'c'); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v), pong : game (game.v), p : paddle (paddle.v)]", 10, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_Game (top_Game.v), top_Pong : top_pong (topmodule.v), pong : game (game.v), p : paddle (paddle.v)]", 10, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("paddle.v", 23, 251); // cl (w, cl)
+typeControlKey((HResource) null, "paddle.v", 'c'); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("paddle.v", 82, 214); // cl (w, cl)
+typeControlKey((HResource) null, "paddle.v", 'c'); // cl (w, cl)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1144 ms. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,279 MB. GUI used memory: 67 MB. Current time: 12/2/22, 5:05:16 PM EST

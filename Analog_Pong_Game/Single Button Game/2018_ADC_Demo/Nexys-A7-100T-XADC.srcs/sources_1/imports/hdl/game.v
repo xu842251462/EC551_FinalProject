@@ -24,6 +24,7 @@ module game(
     input wire mode,
     input wire CLK, // 100 Mhz clock
     input wire [1:0] BTN_LR, // left and right buttons
+    input wire [3:0] Speed,
     output wire VGA_HS, // horizontal sync
     output wire VGA_VS, // vertical sync
     output reg [3:0] VGA_R, // red channels
@@ -87,6 +88,7 @@ module game(
         .i_ani_stb(pix_stb),
         .i_animate(animate),
         .BTN_LR(BTN_LR),
+        .Speed(Speed),
         .o_x1(sq_b_x1),
         .o_x2(sq_b_x2),
         .o_y1(sq_b_y1),

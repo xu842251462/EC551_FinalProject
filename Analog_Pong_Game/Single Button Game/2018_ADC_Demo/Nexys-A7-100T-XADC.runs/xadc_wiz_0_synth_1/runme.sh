@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='X:/EC551/Demos_Clean/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/xadc_wiz_0_synth_1'
+HD_PWD='X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo/Nexys-A7-100T-XADC.runs/xadc_wiz_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

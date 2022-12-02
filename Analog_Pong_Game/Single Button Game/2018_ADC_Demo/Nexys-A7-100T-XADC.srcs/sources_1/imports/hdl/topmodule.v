@@ -24,6 +24,7 @@ module top_pong(
     input wire CLK, // 100 Mhz clock
     input wire RST_BTN, // reset button
     input wire [1:0] BTN_LR, // left and right buttons
+    input wire [3:0] Speed,
     input wire BTNC, // mode change button
     output reg VGA_HS, // horizontal sync
     output reg VGA_VS, // vertical sync
@@ -54,7 +55,7 @@ module top_pong(
         
     clock_divider #(.DIVISOR(500000)) clk600Hz(.clk_in(CLK), .clk_out(slow_clk));  // create 200 Hz clock for seven segment display
     
-    game pong(.mode(mode), .CLK(CLK), .BTN_LR(BTN_LR), .VGA_HS(vga_hs), .VGA_VS(vga_vs), 
+    game pong(.mode(mode), .CLK(CLK), .BTN_LR(BTN_LR), .Speed(Speed), .VGA_HS(vga_hs), .VGA_VS(vga_vs), 
     .VGA_R(vga_r), .VGA_G(vga_g), .VGA_B(vga_b), .endgame(endgame), .score(curr_score)); // initialize pong game
     
     menu_screen(.mode(mode), .CLK(CLK), .VGA_HS(vga_h_start), .VGA_VS(vga_v_start), 

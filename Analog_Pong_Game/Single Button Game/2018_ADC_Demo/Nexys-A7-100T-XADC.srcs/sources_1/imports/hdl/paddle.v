@@ -36,6 +36,7 @@ module paddle
     input wire i_ani_stb,     // animation clock: pixel clock is 1 pix/frame
     input wire i_animate,     // animate flag
     input wire [1:0] BTN_LR,     // bit 0 - right, bit 1 - left
+    input wire [3:0] Speed,
     output reg [11:0] o_x1,  // square left edge: 12-bit value: 0-4095
     output reg [11:0] o_x2,  // square right edge
     output reg [11:0] o_y1,  // square top edge
@@ -61,9 +62,9 @@ module paddle
         if (i_animate & i_ani_stb & !endgame)
         begin
             if (BTN_LR[0] & ! BTN_LR[1] & o_x2<=D_WIDTH) // only right button pressed
-                x <= x + 10; // move paddle to right
+                x <= x + Speed; // move paddle to right
             if (BTN_LR[1] & ! BTN_LR[0] & o_x1>=2) // only left button pressed
-                x <= x - 10; // move paddle to left
+                x <= x - Speed; // move paddle to left
         end
     end
     

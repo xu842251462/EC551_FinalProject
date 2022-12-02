@@ -53,6 +53,7 @@ module top_Game(
     wire [6:0] seg_top;
     wire an_top;
     wire [15:0] LED;
+    wire[3:0]Speed;
     
     
     top_XADC top_ADC(
@@ -80,6 +81,7 @@ module top_Game(
     .CLK(CLK100MHZ), // 100 Mhz clock
     .RST_BTN(RST_BTN), // reset button
     .BTN_LR(BTN_LR), // left and right buttons
+    .Speed(Speed),  //Step size of movement
     .BTNC(BTNC), // mode change button
     .VGA_HS(vga_hs_top), // horizontal sync
     .VGA_VS(vga_vs_top), // vertical sync
@@ -95,6 +97,7 @@ module top_Game(
     .CLK100MHZ(CLK100MHZ),//
     .analog_in(decimal_reg_in_top), //from adc, 16 bit input
     .SW_direction(sw[3:2]),
+    .Speed(Speed),
     .BTN_LR(BTN_LR) //out to game top module
  );  
     

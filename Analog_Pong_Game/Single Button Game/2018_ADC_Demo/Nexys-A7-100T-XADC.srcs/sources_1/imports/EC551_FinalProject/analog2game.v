@@ -24,12 +24,13 @@ module analog2game(
     input wire CLK100MHZ,
     input wire [11:0]analog_in,
     input wire [1:0]SW_direction,
+    output reg [3:0]Speed,
     output reg [1:0]BTN_LR
     );
 
- always@(*)
+  always@(*)
      begin
-         if(analog_in >= 4093)      // Looks nicer if our max value is 1V instead of .999755
+         if(analog_in >= 1000)      // Looks nicer if our max value is 1V instead of .999755
             begin
                 case(SW_direction)
                     2'b01: BTN_LR <= 01;
@@ -39,9 +40,26 @@ module analog2game(
                 endcase
             end
         else begin
-        BTN_LR <= 00;
-        end
-     end
+            BTN_LR <= 00;
+            end
+        if(analog_in >= 1000 && analog_in < 2000)
+            begin
+            Speed = 4'b10;
+            end
+        else if (analog_in >= 2000 && analog_in < 3000)
+            begin
+            Speed = 4'b111;
+            end
+        else if (analog_in >= 3000 && analog_in < 4000)
+            begin
+            Speed = 4'b1010;
+            end
+        else if (analog_in >= 4000)
+            begin
+            Speed = 4'b1101;
+            end
+    end
+
                  
      
 endmodule
