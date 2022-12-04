@@ -2,13 +2,18 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Dec  4 13:42:28 2022
-# Process ID: 34076
+# Start of session at: Fri Dec  2 16:33:38 2022
+# Process ID: 35216
 # Current directory: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25012 X:\EC551\FinalProject\Working Copy 11.23\EC551_FinalProject\Analog_Pong_Game\Single Button Game\2018_ADC_Demo\Nexys-A7-100T-XADC.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4124 X:\EC551\FinalProject\Working Copy 11.23\EC551_FinalProject\Analog_Pong_Game\Single Button Game\2018_ADC_Demo\Nexys-A7-100T-XADC.xpr
 # Log file: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo/vivado.log
 # Journal file: X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {X:/EC551/FinalProject/Working Copy 11.23/EC551_FinalProject/Analog_Pong_Game/Single Button Game/2018_ADC_Demo/Nexys-A7-100T-XADC.xpr}
+reset_run xadc_wiz_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
 update_compile_order -fileset sources_1
+get_board_parts
