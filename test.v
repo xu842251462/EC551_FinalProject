@@ -1,3 +1,5 @@
+
+
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -132,40 +134,12 @@ module top_pong(
     wire VGA_HS_C; // horizontal sync
     wire VGA_VS_C; // vertical sync
     wire record; //flag for recording
-    end_capture ec(
-        .sq_a_x1(sq_c_x1),
-        .sq_a_x2(sq_c_x2),
-        .sq_a_y1(sq_c_y1),
-        .sq_a_y2(sq_c_y2),
-        .sq_b_x1(sq_d_x1),
-        .sq_b_x2(sq_d_x2),
-        .sq_b_y1(sq_d_y1),
-        .sq_b_y2(sq_d_y2), 
-        .sq_b1_x1(sq_d1_x1),
-        .sq_b1_x2(sq_d1_x2),
-        .sq_b1_y1(sq_d1_y1),
-        .sq_b1_y2(sq_d1_y2), 
-        
-        .CLK(CLK), // 100 Mhz clock
-        .VGA_HS(VGA_HS_C), // horizontal sync
-        .VGA_VS(VGA_VS_C), // vertical sync    
-        .VGA_R_C(VGA_R_C), // red channels
-        .VGA_G_C(VGA_G_C), // green channels
-        .VGA_B_C(VGA_B_C), // blue channels  
-        .endgame(endgame),
-        .score(curr_score)
-       // .record(record)
-    );
     parameter RAM_WIDTH = 144;
-parameter RAM_ADDR_BITS = 9;
+    parameter RAM_ADDR_BITS = 9;
 
 reg							ram_enable;
 reg							write_enable;
 reg 	[RAM_ADDR_BITS-1:0]	address;
-/*reg 	[11:0] 	input_data;
-wire	[11:0] 	output_data;
-reg     [8:0] i;
-reg     [8:0] 	addressb;*/
 bram
 #(
 	.RAM_WIDTH 		(RAM_WIDTH 		),
@@ -204,6 +178,31 @@ bram_inst
 	.output_data10    (sq_d1_y1	),
 	.output_data11    ( sq_d1_y2)
 );
+
+    end_capture ec(
+        .sq_a_x1(sq_c_x1),
+        .sq_a_x2(sq_c_x2),
+        .sq_a_y1(sq_c_y1),
+        .sq_a_y2(sq_c_y2),
+        .sq_b_x1(sq_d_x1),
+        .sq_b_x2(sq_d_x2),
+        .sq_b_y1(sq_d_y1),
+        .sq_b_y2(sq_d_y2), 
+        .sq_b1_x1(sq_d1_x1),
+        .sq_b1_x2(sq_d1_x2),
+        .sq_b1_y1(sq_d1_y1),
+        .sq_b1_y2(sq_d1_y2), 
+        
+        .CLK(CLK), // 100 Mhz clock
+        .VGA_HS(VGA_HS_C), // horizontal sync
+        .VGA_VS(VGA_VS_C), // vertical sync    
+        .VGA_R_C(VGA_R_C), // red channels
+        .VGA_G_C(VGA_G_C), // green channels
+        .VGA_B_C(VGA_B_C), // blue channels  
+        .endgame(endgame),
+        .score(curr_score)
+       // .record(record)
+    );
     always @(*)
     begin
         case(mode)
@@ -212,28 +211,29 @@ bram_inst
             end
             1:begin 
                 if (!endgame) begin // if game over flag not triggered
-                    if (address < 512) begin
                     write_enable	= 1;
                     #25;
+	                if (address < 512) begin
 	                address <= address + 1;
-	                write_enable = 0;
                     end
-                    {seg, AN, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS} = {c_seg, c_anode, vga_r, vga_g, vga_b, vga_hs, vga_vs}; // pong game
-                     
+                    {seg, AN, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS} = {c_seg, c_anode, vga_r, vga_g, vga_b, vga_hs, vga_vs}; // pong game 
                 end else 
                 if(reply & endgame) 
                 begin // if game over flag triggered
-                     ram_enable	= 1;
-                     for (address = 0;address < 512; address = address + 1) begin
-	                 #25;
+                     
+	                 ram_enable	= 1;
+	                 #100;
 	                 {AN, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS} = {8'b11111111 ,VGA_R_C, VGA_G_C, VGA_B_C, VGA_HS_C, VGA_VS_C}; // game over screen
-	                 end
-	                 ram_enable	= 0;
-                     //{AN, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS} = {8'b11111111 ,VGA_R_C, VGA_G_C, VGA_B_C, VGA_HS_C, VGA_VS_C}; // game over screen
+	                 if (address < 512) begin
+	                   address <= address + 1;
+                      end
+                      
                 end else 
                 if(endgame) 
                 begin // if game over flag triggered
-                     //addressb <= address;
+                     address <= 0;
+                     write_enable = 0;
+                     ram_enable	= 0;
                      {AN, VGA_R, VGA_G, VGA_B, VGA_HS, VGA_VS} = {8'b11111111 ,vga_r_end, vga_g_end, vga_b_end, vga_h_end, vga_v_end}; // game over screen
                 end      
               end        
